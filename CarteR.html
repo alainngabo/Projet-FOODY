@@ -1,0 +1,3085 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d9b1dc8cd7fb4218958d756206b56f18 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d9b1dc8cd7fb4218958d756206b56f18" ></div>
+        
+</body>
+<script>    
+    
+            var map_d9b1dc8cd7fb4218958d756206b56f18 = L.map(
+                "map_d9b1dc8cd7fb4218958d756206b56f18",
+                {
+                    center: [37.435998, -39.480053],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d4c935606ea2454c9d712afcb135b58e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d9b1dc8cd7fb4218958d756206b56f18);
+        
+    
+            var marker_cluster_157f6f30b4814692b8cb8c353bf6f163 = L.markerClusterGroup(
+                {}
+            );
+            map_d9b1dc8cd7fb4218958d756206b56f18.addLayer(marker_cluster_157f6f30b4814692b8cb8c353bf6f163);
+        
+    
+            var feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5 = L.featureGroup.subGroup(
+                marker_cluster_157f6f30b4814692b8cb8c353bf6f163
+            );
+            feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5.addTo(map_d9b1dc8cd7fb4218958d756206b56f18);
+        
+    
+            var marker_fd169a02173e4b3096bd4affcf1bf26e = L.marker(
+                [52.865196, -7.9794599],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_4ebb8e090faf4619861da567815c6702 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_fd169a02173e4b3096bd4affcf1bf26e.setIcon(beautify_icon_4ebb8e090faf4619861da567815c6702);
+        
+    
+        var popup_086996d026ac4c699b61fe8153c7985f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c2b0822e54649d08de932a021e76958 = $(`<div id="html_1c2b0822e54649d08de932a021e76958" style="width: 100.0%; height: 100.0%;">Ireland Délai de livraison : 11.0</div>`)[0];
+            popup_086996d026ac4c699b61fe8153c7985f.setContent(html_1c2b0822e54649d08de932a021e76958);
+        
+
+        marker_fd169a02173e4b3096bd4affcf1bf26e.bindPopup(popup_086996d026ac4c699b61fe8153c7985f)
+        ;
+
+        
+    
+    
+            var marker_3f5a7d385e904530a77ba0a0f679a16f = L.marker(
+                [46.7985624, 8.2319736],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_54f732d2f62542b5be5a19c59f2ef3ee = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_3f5a7d385e904530a77ba0a0f679a16f.setIcon(beautify_icon_54f732d2f62542b5be5a19c59f2ef3ee);
+        
+    
+        var popup_207e7dd9f2d64652849bf915a92400d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ecb6865547541d3965dd7aef325dc5e = $(`<div id="html_2ecb6865547541d3965dd7aef325dc5e" style="width: 100.0%; height: 100.0%;">Switzerland Délai de livraison : 10.0</div>`)[0];
+            popup_207e7dd9f2d64652849bf915a92400d1.setContent(html_2ecb6865547541d3965dd7aef325dc5e);
+        
+
+        marker_3f5a7d385e904530a77ba0a0f679a16f.bindPopup(popup_207e7dd9f2d64652849bf915a92400d1)
+        ;
+
+        
+    
+    
+            var marker_8bc55aa8cb1f4435bb6b432f3b666fa4 = L.marker(
+                [39.7837304, -100.4458825],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_ec75d5fb594840d483101aeb4fdd20cb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_8bc55aa8cb1f4435bb6b432f3b666fa4.setIcon(beautify_icon_ec75d5fb594840d483101aeb4fdd20cb);
+        
+    
+        var popup_408f246d56584d0c9cd6a35e86007b36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2cef6ba884d45febcc043f620330448 = $(`<div id="html_c2cef6ba884d45febcc043f620330448" style="width: 100.0%; height: 100.0%;">USA Délai de livraison : 10.0</div>`)[0];
+            popup_408f246d56584d0c9cd6a35e86007b36.setContent(html_c2cef6ba884d45febcc043f620330448);
+        
+
+        marker_8bc55aa8cb1f4435bb6b432f3b666fa4.bindPopup(popup_408f246d56584d0c9cd6a35e86007b36)
+        ;
+
+        
+    
+    
+            var marker_ba42ecddc6104898a80e7d92f726c1f9 = L.marker(
+                [59.6749712, 14.5208584],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_7b6346f2ec3d4346b7ff6deb45a69c0c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_ba42ecddc6104898a80e7d92f726c1f9.setIcon(beautify_icon_7b6346f2ec3d4346b7ff6deb45a69c0c);
+        
+    
+        var popup_cd7f031a922a469baedd7b377843c092 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ded07f428a784cf89da6e81e5b32fb51 = $(`<div id="html_ded07f428a784cf89da6e81e5b32fb51" style="width: 100.0%; height: 100.0%;">Sweden Délai de livraison : 10.0</div>`)[0];
+            popup_cd7f031a922a469baedd7b377843c092.setContent(html_ded07f428a784cf89da6e81e5b32fb51);
+        
+
+        marker_ba42ecddc6104898a80e7d92f726c1f9.bindPopup(popup_cd7f031a922a469baedd7b377843c092)
+        ;
+
+        
+    
+    
+            var marker_e590818f14984125b65b1d64ce39346a = L.marker(
+                [50.6402809, 4.6667145],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_68efc13a58854d1f997c1cdf42483c43 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_e590818f14984125b65b1d64ce39346a.setIcon(beautify_icon_68efc13a58854d1f997c1cdf42483c43);
+        
+    
+        var popup_d315b58600b84e6689251dca6313e549 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43a4155d40a44250a81e99a634395ae4 = $(`<div id="html_43a4155d40a44250a81e99a634395ae4" style="width: 100.0%; height: 100.0%;">Belgium Délai de livraison : 9.0</div>`)[0];
+            popup_d315b58600b84e6689251dca6313e549.setContent(html_43a4155d40a44250a81e99a634395ae4);
+        
+
+        marker_e590818f14984125b65b1d64ce39346a.bindPopup(popup_d315b58600b84e6689251dca6313e549)
+        ;
+
+        
+    
+    
+            var marker_963b496f6ebd4973b4cafea37d595987 = L.marker(
+                [47.2, 13.2],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_679b91aab0074ea6bc8c167213759ca5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_963b496f6ebd4973b4cafea37d595987.setIcon(beautify_icon_679b91aab0074ea6bc8c167213759ca5);
+        
+    
+        var popup_214535a950c741c59c26bf6cb55a762a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_910902596a774a2ca0cbeb783d9e2482 = $(`<div id="html_910902596a774a2ca0cbeb783d9e2482" style="width: 100.0%; height: 100.0%;">Austria Délai de livraison : 9.0</div>`)[0];
+            popup_214535a950c741c59c26bf6cb55a762a.setContent(html_910902596a774a2ca0cbeb783d9e2482);
+        
+
+        marker_963b496f6ebd4973b4cafea37d595987.bindPopup(popup_214535a950c741c59c26bf6cb55a762a)
+        ;
+
+        
+    
+    
+            var marker_cccf689cdad6488a8f5f37bb0fccb6db = L.marker(
+                [39.3260685, -4.8379791],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_e79c19b0dae54179b18a2f50accf9995 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_cccf689cdad6488a8f5f37bb0fccb6db.setIcon(beautify_icon_e79c19b0dae54179b18a2f50accf9995);
+        
+    
+        var popup_cac78696247242a0b46360f6c0affce1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c782535c049462cb1f9db25991a0b50 = $(`<div id="html_8c782535c049462cb1f9db25991a0b50" style="width: 100.0%; height: 100.0%;">Spain Délai de livraison : 9.0</div>`)[0];
+            popup_cac78696247242a0b46360f6c0affce1.setContent(html_8c782535c049462cb1f9db25991a0b50);
+        
+
+        marker_cccf689cdad6488a8f5f37bb0fccb6db.bindPopup(popup_cac78696247242a0b46360f6c0affce1)
+        ;
+
+        
+    
+    
+            var marker_61217a214977466699ab73a2a5c1f009 = L.marker(
+                [40.0332629, -7.8896263],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_bd7ceb15b5a44fe794b962afbe03121b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_61217a214977466699ab73a2a5c1f009.setIcon(beautify_icon_bd7ceb15b5a44fe794b962afbe03121b);
+        
+    
+        var popup_0167c6c7b84b40108f2ce57346e4237c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32aa28c85a2942fdb6e61159f2fbb353 = $(`<div id="html_32aa28c85a2942fdb6e61159f2fbb353" style="width: 100.0%; height: 100.0%;">Portugal Délai de livraison : 9.0</div>`)[0];
+            popup_0167c6c7b84b40108f2ce57346e4237c.setContent(html_32aa28c85a2942fdb6e61159f2fbb353);
+        
+
+        marker_61217a214977466699ab73a2a5c1f009.bindPopup(popup_0167c6c7b84b40108f2ce57346e4237c)
+        ;
+
+        
+    
+    
+            var marker_4ec393f0b5c3481195f9137414ae912a = L.marker(
+                [-34.9964963, -64.9672817],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_7fc27ea49d9f406684a11897dec346a7 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_4ec393f0b5c3481195f9137414ae912a.setIcon(beautify_icon_7fc27ea49d9f406684a11897dec346a7);
+        
+    
+        var popup_58f70129f53a4ddf8a70388025b94b64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43c6369b42cd4c80827640e759af2416 = $(`<div id="html_43c6369b42cd4c80827640e759af2416" style="width: 100.0%; height: 100.0%;">Argentina Délai de livraison : 9.0</div>`)[0];
+            popup_58f70129f53a4ddf8a70388025b94b64.setContent(html_43c6369b42cd4c80827640e759af2416);
+        
+
+        marker_4ec393f0b5c3481195f9137414ae912a.bindPopup(popup_58f70129f53a4ddf8a70388025b94b64)
+        ;
+
+        
+    
+    
+            var marker_33659a34c6604f65a396581ae142aa27 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_e974a964c2ce4d4fb3c159837f1393e8 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_33659a34c6604f65a396581ae142aa27.setIcon(beautify_icon_e974a964c2ce4d4fb3c159837f1393e8);
+        
+    
+        var popup_5e45f1fff96a445392b952689598ca5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53b6528c724342d78746165c938d587d = $(`<div id="html_53b6528c724342d78746165c938d587d" style="width: 100.0%; height: 100.0%;">France Délai de livraison : 8.0</div>`)[0];
+            popup_5e45f1fff96a445392b952689598ca5e.setContent(html_53b6528c724342d78746165c938d587d);
+        
+
+        marker_33659a34c6604f65a396581ae142aa27.bindPopup(popup_5e45f1fff96a445392b952689598ca5e)
+        ;
+
+        
+    
+    
+            var marker_0e54a2e73a364301b88c2c62905bb354 = L.marker(
+                [51.0834196, 10.4234469],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_5c5ae9440c83444dbfe77f4102e93dbf = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_0e54a2e73a364301b88c2c62905bb354.setIcon(beautify_icon_5c5ae9440c83444dbfe77f4102e93dbf);
+        
+    
+        var popup_c504cc28eb084f4cac1d4f0cfe88d0a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a15ec2111e854a0b8d566e2a2173cfe3 = $(`<div id="html_a15ec2111e854a0b8d566e2a2173cfe3" style="width: 100.0%; height: 100.0%;">Germany Délai de livraison : 8.0</div>`)[0];
+            popup_c504cc28eb084f4cac1d4f0cfe88d0a1.setContent(html_a15ec2111e854a0b8d566e2a2173cfe3);
+        
+
+        marker_0e54a2e73a364301b88c2c62905bb354.bindPopup(popup_c504cc28eb084f4cac1d4f0cfe88d0a1)
+        ;
+
+        
+    
+    
+            var marker_4ae86b5866304ed69c939cf7b9ea59d2 = L.marker(
+                [-10.3333333, -53.2],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_9ea6245430404952bcee7265296f743f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_4ae86b5866304ed69c939cf7b9ea59d2.setIcon(beautify_icon_9ea6245430404952bcee7265296f743f);
+        
+    
+        var popup_ac7373cbc1644573a10c38368633340c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c43905c079ec46e194a038e6441b20c6 = $(`<div id="html_c43905c079ec46e194a038e6441b20c6" style="width: 100.0%; height: 100.0%;">Brazil Délai de livraison : 8.0</div>`)[0];
+            popup_ac7373cbc1644573a10c38368633340c.setContent(html_c43905c079ec46e194a038e6441b20c6);
+        
+
+        marker_4ae86b5866304ed69c939cf7b9ea59d2.bindPopup(popup_ac7373cbc1644573a10c38368633340c)
+        ;
+
+        
+    
+    
+            var marker_02e80113d3ab4fc09c7d63af7c9a7bdb = L.marker(
+                [8.0018709, -66.1109318],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_f23d48ef70db4514a81d3592ff0d807e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_02e80113d3ab4fc09c7d63af7c9a7bdb.setIcon(beautify_icon_f23d48ef70db4514a81d3592ff0d807e);
+        
+    
+        var popup_dfbb98bfb4f149a4824385c44b511dd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_252a4fe032394856ae722df06c16b4ba = $(`<div id="html_252a4fe032394856ae722df06c16b4ba" style="width: 100.0%; height: 100.0%;">Venezuela Délai de livraison : 8.0</div>`)[0];
+            popup_dfbb98bfb4f149a4824385c44b511dd4.setContent(html_252a4fe032394856ae722df06c16b4ba);
+        
+
+        marker_02e80113d3ab4fc09c7d63af7c9a7bdb.bindPopup(popup_dfbb98bfb4f149a4824385c44b511dd4)
+        ;
+
+        
+    
+    
+            var marker_c15d3d4e99a343ab8b2f3fd7d754e1fd = L.marker(
+                [22.5000485, -100.0000375],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_de2c5b8630334e888f2a779c367b9205 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_c15d3d4e99a343ab8b2f3fd7d754e1fd.setIcon(beautify_icon_de2c5b8630334e888f2a779c367b9205);
+        
+    
+        var popup_182a12527eb04e1db3a3cbbde41c98b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d020af878f2542da9f16cde7d04b3d19 = $(`<div id="html_d020af878f2542da9f16cde7d04b3d19" style="width: 100.0%; height: 100.0%;">Mexico Délai de livraison : 8.0</div>`)[0];
+            popup_182a12527eb04e1db3a3cbbde41c98b5.setContent(html_d020af878f2542da9f16cde7d04b3d19);
+        
+
+        marker_c15d3d4e99a343ab8b2f3fd7d754e1fd.bindPopup(popup_182a12527eb04e1db3a3cbbde41c98b5)
+        ;
+
+        
+    
+    
+            var marker_999e9a16ef7a4d5aa985919a75a72afb = L.marker(
+                [42.6384261, 12.674297],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_b3995c5872bd465c9b505df7e1efd34b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_999e9a16ef7a4d5aa985919a75a72afb.setIcon(beautify_icon_b3995c5872bd465c9b505df7e1efd34b);
+        
+    
+        var popup_b3d974afbaf34f35a512dabc77d76ae7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_676bd42b31f74d569570abf4ae86d1de = $(`<div id="html_676bd42b31f74d569570abf4ae86d1de" style="width: 100.0%; height: 100.0%;">Italy Délai de livraison : 8.0</div>`)[0];
+            popup_b3d974afbaf34f35a512dabc77d76ae7.setContent(html_676bd42b31f74d569570abf4ae86d1de);
+        
+
+        marker_999e9a16ef7a4d5aa985919a75a72afb.bindPopup(popup_b3d974afbaf34f35a512dabc77d76ae7)
+        ;
+
+        
+    
+    
+            var marker_c4e2c2e154ff46f1a7756bcfc05e1cf7 = L.marker(
+                [54.7023545, -3.2765753],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_c9e449906243459994cb280e580246f4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_c4e2c2e154ff46f1a7756bcfc05e1cf7.setIcon(beautify_icon_c9e449906243459994cb280e580246f4);
+        
+    
+        var popup_efab24fc815c443ca9af0d01f729e3d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_408c7a3c729241e5a31af6326a80bc4d = $(`<div id="html_408c7a3c729241e5a31af6326a80bc4d" style="width: 100.0%; height: 100.0%;">UK Délai de livraison : 8.0</div>`)[0];
+            popup_efab24fc815c443ca9af0d01f729e3d9.setContent(html_408c7a3c729241e5a31af6326a80bc4d);
+        
+
+        marker_c4e2c2e154ff46f1a7756bcfc05e1cf7.bindPopup(popup_efab24fc815c443ca9af0d01f729e3d9)
+        ;
+
+        
+    
+    
+            var marker_fc990b590a134447b0921db10ef0e435 = L.marker(
+                [52.215933, 19.134422],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_2ff0d57420794569b4ad627d59d42012 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_fc990b590a134447b0921db10ef0e435.setIcon(beautify_icon_2ff0d57420794569b4ad627d59d42012);
+        
+    
+        var popup_b90fd7680cce40d381bb3618d0717e18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d61aeb2befc34f8988cc4e11476e6670 = $(`<div id="html_d61aeb2befc34f8988cc4e11476e6670" style="width: 100.0%; height: 100.0%;">Poland Délai de livraison : 8.0</div>`)[0];
+            popup_b90fd7680cce40d381bb3618d0717e18.setContent(html_d61aeb2befc34f8988cc4e11476e6670);
+        
+
+        marker_fc990b590a134447b0921db10ef0e435.bindPopup(popup_b90fd7680cce40d381bb3618d0717e18)
+        ;
+
+        
+    
+    
+            var marker_6367ec4a0ebd414d9f14706dc2c558ca = L.marker(
+                [55.670249, 10.3333283],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_ff3c0177fbe2490f9d76835383c7c0de = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_6367ec4a0ebd414d9f14706dc2c558ca.setIcon(beautify_icon_ff3c0177fbe2490f9d76835383c7c0de);
+        
+    
+        var popup_3e5e7148f6cb481ab4740dda2579bd35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b2b930a88a7476faf1fc4ee89156b72 = $(`<div id="html_8b2b930a88a7476faf1fc4ee89156b72" style="width: 100.0%; height: 100.0%;">Denmark Délai de livraison : 7.0</div>`)[0];
+            popup_3e5e7148f6cb481ab4740dda2579bd35.setContent(html_8b2b930a88a7476faf1fc4ee89156b72);
+        
+
+        marker_6367ec4a0ebd414d9f14706dc2c558ca.bindPopup(popup_3e5e7148f6cb481ab4740dda2579bd35)
+        ;
+
+        
+    
+    
+            var marker_816a71076e5c4913be42731576107da9 = L.marker(
+                [60.5000209, 9.0999715],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_88fbf9273e5349efa869966d01149e89 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_816a71076e5c4913be42731576107da9.setIcon(beautify_icon_88fbf9273e5349efa869966d01149e89);
+        
+    
+        var popup_876e53d7cb3e4e07b614d7b18fea2334 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a162c2a646b54362b06d30b7966614e4 = $(`<div id="html_a162c2a646b54362b06d30b7966614e4" style="width: 100.0%; height: 100.0%;">Norway Délai de livraison : 7.0</div>`)[0];
+            popup_876e53d7cb3e4e07b614d7b18fea2334.setContent(html_a162c2a646b54362b06d30b7966614e4);
+        
+
+        marker_816a71076e5c4913be42731576107da9.bindPopup(popup_876e53d7cb3e4e07b614d7b18fea2334)
+        ;
+
+        
+    
+    
+            var marker_d9fe454a5322410d9ee4ffd600bd9087 = L.marker(
+                [63.2467777, 25.9209164],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_64725fe71db744a88e10e760b4e63f3f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_d9fe454a5322410d9ee4ffd600bd9087.setIcon(beautify_icon_64725fe71db744a88e10e760b4e63f3f);
+        
+    
+        var popup_dfb8de4520db443d9aac0498027e1c1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ab8b258b54a47988b45cdc830a0d442 = $(`<div id="html_7ab8b258b54a47988b45cdc830a0d442" style="width: 100.0%; height: 100.0%;">Finland Délai de livraison : 6.0</div>`)[0];
+            popup_dfb8de4520db443d9aac0498027e1c1d.setContent(html_7ab8b258b54a47988b45cdc830a0d442);
+        
+
+        marker_d9fe454a5322410d9ee4ffd600bd9087.bindPopup(popup_dfb8de4520db443d9aac0498027e1c1d)
+        ;
+
+        
+    
+    
+            var marker_715d31f2c6cd4c5c893ab114cebb646b = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5);
+        
+    
+            var beautify_icon_a47b8423bfd74d15a10a69b08f1da212 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_715d31f2c6cd4c5c893ab114cebb646b.setIcon(beautify_icon_a47b8423bfd74d15a10a69b08f1da212);
+        
+    
+        var popup_b8e65773ab2a49a689d350b0bfa83bcc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_790811651d3a41a1a0dff18c1fb4ce80 = $(`<div id="html_790811651d3a41a1a0dff18c1fb4ce80" style="width: 100.0%; height: 100.0%;">Canada Délai de livraison : 6.0</div>`)[0];
+            popup_b8e65773ab2a49a689d350b0bfa83bcc.setContent(html_790811651d3a41a1a0dff18c1fb4ce80);
+        
+
+        marker_715d31f2c6cd4c5c893ab114cebb646b.bindPopup(popup_b8e65773ab2a49a689d350b0bfa83bcc)
+        ;
+
+        
+    
+    
+            var feature_group_sub_group_0b074f49da34442794c898597b6c218b = L.featureGroup.subGroup(
+                marker_cluster_157f6f30b4814692b8cb8c353bf6f163
+            );
+            feature_group_sub_group_0b074f49da34442794c898597b6c218b.addTo(map_d9b1dc8cd7fb4218958d756206b56f18);
+        
+    
+            var marker_ab9958eeb6234f74bf28d7dfeb3fdd81 = L.marker(
+                [62.783333, 15.666667],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_cc1ee1c9aed14c3181f4bc73d48c551b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_ab9958eeb6234f74bf28d7dfeb3fdd81.setIcon(beautify_icon_cc1ee1c9aed14c3181f4bc73d48c551b);
+        
+    
+        var popup_8d36fe3811b74aa8bd145ec85fc35366 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b9b4b15aad446539834104cacf881f8 = $(`<div id="html_4b9b4b15aad446539834104cacf881f8" style="width: 100.0%; height: 100.0%;">Bräcke Livraison dans les temps : 1</div>`)[0];
+            popup_8d36fe3811b74aa8bd145ec85fc35366.setContent(html_4b9b4b15aad446539834104cacf881f8);
+        
+
+        marker_ab9958eeb6234f74bf28d7dfeb3fdd81.bindPopup(popup_8d36fe3811b74aa8bd145ec85fc35366)
+        ;
+
+        
+    
+    
+            var marker_af5aadaf81304a57abca2596863ecb56 = L.marker(
+                [39.9059878, -116.9843374],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_5d7546d060ff4a4ebf76cb6519c65ced = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_af5aadaf81304a57abca2596863ecb56.setIcon(beautify_icon_5d7546d060ff4a4ebf76cb6519c65ced);
+        
+    
+        var popup_411ade5ceeb8427d953265d4e7dd22e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7abd9ef40b98435987bb7bf717851847 = $(`<div id="html_7abd9ef40b98435987bb7bf717851847" style="width: 100.0%; height: 100.0%;">Lander Livraison dans les temps : 1</div>`)[0];
+            popup_411ade5ceeb8427d953265d4e7dd22e8.setContent(html_7abd9ef40b98435987bb7bf717851847);
+        
+
+        marker_af5aadaf81304a57abca2596863ecb56.bindPopup(popup_411ade5ceeb8427d953265d4e7dd22e8)
+        ;
+
+        
+    
+    
+            var marker_8f4c2b9779ab407c80128dbf108d128f = L.marker(
+                [20.7533451, 74.4989584],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_24560a05aa374ae0ad483231a21ec6ed = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_8f4c2b9779ab407c80128dbf108d128f.setIcon(beautify_icon_24560a05aa374ae0ad483231a21ec6ed);
+        
+    
+        var popup_cabf6aadb4fa4f55989edea3b159786e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfc92be68ab84d8a992767845608db67 = $(`<div id="html_cfc92be68ab84d8a992767845608db67" style="width: 100.0%; height: 100.0%;">Lule Livraison dans les temps : 2</div>`)[0];
+            popup_cabf6aadb4fa4f55989edea3b159786e.setContent(html_cfc92be68ab84d8a992767845608db67);
+        
+
+        marker_8f4c2b9779ab407c80128dbf108d128f.bindPopup(popup_cabf6aadb4fa4f55989edea3b159786e)
+        ;
+
+        
+    
+    
+            var marker_e6fccc25cafe460a83065a70d9c64aac = L.marker(
+                [50.4120332, 4.4436244],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_3a05e64f9cdc46c299659375b7837b04 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_e6fccc25cafe460a83065a70d9c64aac.setIcon(beautify_icon_3a05e64f9cdc46c299659375b7837b04);
+        
+    
+        var popup_0c726812f7434a9cae2d7eccb631b920 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_176099b8d2934df0b537d6c79d90c71d = $(`<div id="html_176099b8d2934df0b537d6c79d90c71d" style="width: 100.0%; height: 100.0%;">Charleroi Livraison dans les temps : 1</div>`)[0];
+            popup_0c726812f7434a9cae2d7eccb631b920.setContent(html_176099b8d2934df0b537d6c79d90c71d);
+        
+
+        marker_e6fccc25cafe460a83065a70d9c64aac.bindPopup(popup_0c726812f7434a9cae2d7eccb631b920)
+        ;
+
+        
+    
+    
+            var marker_cc78573a38e94e2ba3e0727954006a6b = L.marker(
+                [51.898627, -8.4705942],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_a177506d83a24494b685a7258b5fde60 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_cc78573a38e94e2ba3e0727954006a6b.setIcon(beautify_icon_a177506d83a24494b685a7258b5fde60);
+        
+    
+        var popup_205ba10754204bd493d2a84665f81a50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46af156b90ef4b2991d26094b5749d60 = $(`<div id="html_46af156b90ef4b2991d26094b5749d60" style="width: 100.0%; height: 100.0%;">Cork Livraison dans les temps : 3</div>`)[0];
+            popup_205ba10754204bd493d2a84665f81a50.setContent(html_46af156b90ef4b2991d26094b5749d60);
+        
+
+        marker_cc78573a38e94e2ba3e0727954006a6b.bindPopup(popup_205ba10754204bd493d2a84665f81a50)
+        ;
+
+        
+    
+    
+            var marker_67c56ce7c0ec427da360bf4e8bf172aa = L.marker(
+                [65.0118734, 25.4716809],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_4dfffac0fc9c471c906e98b4bea578c0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_67c56ce7c0ec427da360bf4e8bf172aa.setIcon(beautify_icon_4dfffac0fc9c471c906e98b4bea578c0);
+        
+    
+        var popup_346b994e8ce04e28826366f7343210a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2623d7cb2bc54386952979a68be4dd1d = $(`<div id="html_2623d7cb2bc54386952979a68be4dd1d" style="width: 100.0%; height: 100.0%;">Oulu Livraison dans les temps : 1</div>`)[0];
+            popup_346b994e8ce04e28826366f7343210a1.setContent(html_2623d7cb2bc54386952979a68be4dd1d);
+        
+
+        marker_67c56ce7c0ec427da360bf4e8bf172aa.bindPopup(popup_346b994e8ce04e28826366f7343210a1)
+        ;
+
+        
+    
+    
+            var marker_531163bad9264364a332e40266864fe5 = L.marker(
+                [-22.90556, -47.06083],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_c94a3ae4b84f49a2b802a47ce676af7a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_531163bad9264364a332e40266864fe5.setIcon(beautify_icon_c94a3ae4b84f49a2b802a47ce676af7a);
+        
+    
+        var popup_67e81693f1404c1bbd5f30b4c6de5969 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df61b9aa41ec400bac319176b35f16e8 = $(`<div id="html_df61b9aa41ec400bac319176b35f16e8" style="width: 100.0%; height: 100.0%;">Campinas Livraison dans les temps : 3</div>`)[0];
+            popup_67e81693f1404c1bbd5f30b4c6de5969.setContent(html_df61b9aa41ec400bac319176b35f16e8);
+        
+
+        marker_531163bad9264364a332e40266864fe5.bindPopup(popup_67e81693f1404c1bbd5f30b4c6de5969)
+        ;
+
+        
+    
+    
+            var marker_5c096d34fd7843fbb1fb3eb7765e6129 = L.marker(
+                [47.7981346, 13.0464806],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_cfa7e601f86b4e53b7e4259c77979a58 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_5c096d34fd7843fbb1fb3eb7765e6129.setIcon(beautify_icon_cfa7e601f86b4e53b7e4259c77979a58);
+        
+    
+        var popup_41e80a7b47364fcda9bc29fc56598e0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb4121e0eee4486b842b02af0ee378b7 = $(`<div id="html_cb4121e0eee4486b842b02af0ee378b7" style="width: 100.0%; height: 100.0%;">Salzburg Livraison dans les temps : 1</div>`)[0];
+            popup_41e80a7b47364fcda9bc29fc56598e0f.setContent(html_cb4121e0eee4486b842b02af0ee378b7);
+        
+
+        marker_5c096d34fd7843fbb1fb3eb7765e6129.bindPopup(popup_41e80a7b47364fcda9bc29fc56598e0f)
+        ;
+
+        
+    
+    
+            var marker_c51690b2c5544cf588471d99694d2de9 = L.marker(
+                [38.7077507, -9.1365919],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_feb74bfc439f4cd08e177c04a370ca83 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_c51690b2c5544cf588471d99694d2de9.setIcon(beautify_icon_feb74bfc439f4cd08e177c04a370ca83);
+        
+    
+        var popup_1b9a04fb4d8447d28505cb5a2455a888 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e2f6b0daaa241f695ace0f9127a4d70 = $(`<div id="html_8e2f6b0daaa241f695ace0f9127a4d70" style="width: 100.0%; height: 100.0%;">Lisboa Livraison dans les temps : 1</div>`)[0];
+            popup_1b9a04fb4d8447d28505cb5a2455a888.setContent(html_8e2f6b0daaa241f695ace0f9127a4d70);
+        
+
+        marker_c51690b2c5544cf588471d99694d2de9.bindPopup(popup_1b9a04fb4d8447d28505cb5a2455a888)
+        ;
+
+        
+    
+    
+            var marker_64f1a0fe59894417b8af4cd1a2f37ba7 = L.marker(
+                [51.098481, 14.514475],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_c610c4faa3df4fa2a2b3a1ffc5a25bc2 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_64f1a0fe59894417b8af4cd1a2f37ba7.setIcon(beautify_icon_c610c4faa3df4fa2a2b3a1ffc5a25bc2);
+        
+    
+        var popup_42ec4037f5d1494eb307c55614ab4bcf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70cd43faa09944e5b945eb1312d55717 = $(`<div id="html_70cd43faa09944e5b945eb1312d55717" style="width: 100.0%; height: 100.0%;">Cunewalde Livraison dans les temps : 3</div>`)[0];
+            popup_42ec4037f5d1494eb307c55614ab4bcf.setContent(html_70cd43faa09944e5b945eb1312d55717);
+        
+
+        marker_64f1a0fe59894417b8af4cd1a2f37ba7.bindPopup(popup_42ec4037f5d1494eb307c55614ab4bcf)
+        ;
+
+        
+    
+    
+            var marker_565a34267f6a4a4c9086edf9d5db634f = L.marker(
+                [47.6038321, -122.3300624],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_dc1c81b590534b08ace19e2fc4bed8e9 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_565a34267f6a4a4c9086edf9d5db634f.setIcon(beautify_icon_dc1c81b590534b08ace19e2fc4bed8e9);
+        
+    
+        var popup_62785ccb48f84f899a9dbbe2b5ab818e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad0df10ba2744639a437f57889845a42 = $(`<div id="html_ad0df10ba2744639a437f57889845a42" style="width: 100.0%; height: 100.0%;">Seattle Livraison dans les temps : 2</div>`)[0];
+            popup_62785ccb48f84f899a9dbbe2b5ab818e.setContent(html_ad0df10ba2744639a437f57889845a42);
+        
+
+        marker_565a34267f6a4a4c9086edf9d5db634f.bindPopup(popup_62785ccb48f84f899a9dbbe2b5ab818e)
+        ;
+
+        
+    
+    
+            var marker_67616fca433040cd9f8bc3dafba8a0e9 = L.marker(
+                [51.5073219, -0.1276474],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_4a1d927cb7604f04977093d807672832 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_67616fca433040cd9f8bc3dafba8a0e9.setIcon(beautify_icon_4a1d927cb7604f04977093d807672832);
+        
+    
+        var popup_a7d8649e5258472f878bb0a596c18a3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c11d7e68b054b9a87e65e186d0a465b = $(`<div id="html_3c11d7e68b054b9a87e65e186d0a465b" style="width: 100.0%; height: 100.0%;">London Livraison dans les temps : 3</div>`)[0];
+            popup_a7d8649e5258472f878bb0a596c18a3f.setContent(html_3c11d7e68b054b9a87e65e186d0a465b);
+        
+
+        marker_67616fca433040cd9f8bc3dafba8a0e9.bindPopup(popup_a7d8649e5258472f878bb0a596c18a3f)
+        ;
+
+        
+    
+    
+            var marker_fcb5c6bd820e45d99e15266c6770eddc = L.marker(
+                [46.0667277, -118.3393456],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_531d23f2d08740d096665ce267d091dc = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_fcb5c6bd820e45d99e15266c6770eddc.setIcon(beautify_icon_531d23f2d08740d096665ce267d091dc);
+        
+    
+        var popup_18e01630064f458aa3c02e13e706c686 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ae2945ab9bc452db134efcb40c1c3bb = $(`<div id="html_8ae2945ab9bc452db134efcb40c1c3bb" style="width: 100.0%; height: 100.0%;">Walla Walla Livraison dans les temps : 1</div>`)[0];
+            popup_18e01630064f458aa3c02e13e706c686.setContent(html_8ae2945ab9bc452db134efcb40c1c3bb);
+        
+
+        marker_fcb5c6bd820e45d99e15266c6770eddc.bindPopup(popup_18e01630064f458aa3c02e13e706c686)
+        ;
+
+        
+    
+    
+            var marker_ce2a4487a54545b4a8ba05b3a2f8dc0b = L.marker(
+                [50.1106444, 8.6820917],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_772a8a9c95374812b4508cc9c4fdc0f0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_ce2a4487a54545b4a8ba05b3a2f8dc0b.setIcon(beautify_icon_772a8a9c95374812b4508cc9c4fdc0f0);
+        
+    
+        var popup_3a5767b3b1184208aa2025f75517298d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18010b04ea1d4efc9237474676b5ee7c = $(`<div id="html_18010b04ea1d4efc9237474676b5ee7c" style="width: 100.0%; height: 100.0%;">Frankfurt a.M. Livraison dans les temps : 1</div>`)[0];
+            popup_3a5767b3b1184208aa2025f75517298d.setContent(html_18010b04ea1d4efc9237474676b5ee7c);
+        
+
+        marker_ce2a4487a54545b4a8ba05b3a2f8dc0b.bindPopup(popup_3a5767b3b1184208aa2025f75517298d)
+        ;
+
+        
+    
+    
+            var marker_bb2df3af0e974deebfe43ec46c2c16d6 = L.marker(
+                [42.03726, -88.2810994],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_057e050b293540e284e6ce74241d7b9e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_bb2df3af0e974deebfe43ec46c2c16d6.setIcon(beautify_icon_057e050b293540e284e6ce74241d7b9e);
+        
+    
+        var popup_26b7440216ef4b11b2da65db5c0629d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39cd2b7e298c4247a0fced016882857c = $(`<div id="html_39cd2b7e298c4247a0fced016882857c" style="width: 100.0%; height: 100.0%;">Elgin Livraison dans les temps : 1</div>`)[0];
+            popup_26b7440216ef4b11b2da65db5c0629d7.setContent(html_39cd2b7e298c4247a0fced016882857c);
+        
+
+        marker_bb2df3af0e974deebfe43ec46c2c16d6.bindPopup(popup_26b7440216ef4b11b2da65db5c0629d7)
+        ;
+
+        
+    
+    
+            var marker_c9e33436052940f1ba84053d165a089b = L.marker(
+                [43.2961743, 5.3699525],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_ef01835552ce457d991de3c949bada7b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_c9e33436052940f1ba84053d165a089b.setIcon(beautify_icon_ef01835552ce457d991de3c949bada7b);
+        
+    
+        var popup_5727fb69713d47bba80fff5fb9c2386c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9be9ddab98e641c4a9f7e79df494d0b9 = $(`<div id="html_9be9ddab98e641c4a9f7e79df494d0b9" style="width: 100.0%; height: 100.0%;">Marseille Livraison dans les temps : 2</div>`)[0];
+            popup_5727fb69713d47bba80fff5fb9c2386c.setContent(html_9be9ddab98e641c4a9f7e79df494d0b9);
+        
+
+        marker_c9e33436052940f1ba84053d165a089b.bindPopup(popup_5727fb69713d47bba80fff5fb9c2386c)
+        ;
+
+        
+    
+    
+            var marker_74b7f8bc165c4ecc967fcb5d6a769322 = L.marker(
+                [18.5200904, -70.2076771],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_7b9b9d2a975f4f97abc5d176f19b0952 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_74b7f8bc165c4ecc967fcb5d6a769322.setIcon(beautify_icon_7b9b9d2a975f4f97abc5d176f19b0952);
+        
+    
+        var popup_77dfe6f177994e94be1093bcf02866ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b59e9f787f894ab28f40d387dca1aceb = $(`<div id="html_b59e9f787f894ab28f40d387dca1aceb" style="width: 100.0%; height: 100.0%;">San Cristobal Livraison dans les temps : 2</div>`)[0];
+            popup_77dfe6f177994e94be1093bcf02866ff.setContent(html_b59e9f787f894ab28f40d387dca1aceb);
+        
+
+        marker_74b7f8bc165c4ecc967fcb5d6a769322.bindPopup(popup_77dfe6f177994e94be1093bcf02866ff)
+        ;
+
+        
+    
+    
+            var marker_90ff452400eb49b08a4723f6c0f85755 = L.marker(
+                [44.608664, 10.594796841892734],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_49162d398df84ce1aabec4c2a2cc77a8 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_90ff452400eb49b08a4723f6c0f85755.setIcon(beautify_icon_49162d398df84ce1aabec4c2a2cc77a8);
+        
+    
+        var popup_efcede6a674c4950a8cf1c0477799873 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffcbcc773a1d4a66a15dcc896614572a = $(`<div id="html_ffcbcc773a1d4a66a15dcc896614572a" style="width: 100.0%; height: 100.0%;">Reggio Emilia Livraison dans les temps : 1</div>`)[0];
+            popup_efcede6a674c4950a8cf1c0477799873.setContent(html_ffcbcc773a1d4a66a15dcc896614572a);
+        
+
+        marker_90ff452400eb49b08a4723f6c0f85755.bindPopup(popup_efcede6a674c4950a8cf1c0477799873)
+        ;
+
+        
+    
+    
+            var marker_bebed2a825104755b2253eceb850abf1 = L.marker(
+                [50.757624750000005, -1.3035640666867363],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_42c44fed7fd84547b2b20a19e7f03fce = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_bebed2a825104755b2253eceb850abf1.setIcon(beautify_icon_42c44fed7fd84547b2b20a19e7f03fce);
+        
+    
+        var popup_5ef8ae5a1e4c441399c04c302e8e10b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9ff29b971454c5ebe1cc3e1d53f6a06 = $(`<div id="html_e9ff29b971454c5ebe1cc3e1d53f6a06" style="width: 100.0%; height: 100.0%;">Cowes Livraison dans les temps : 1</div>`)[0];
+            popup_5ef8ae5a1e4c441399c04c302e8e10b2.setContent(html_e9ff29b971454c5ebe1cc3e1d53f6a06);
+        
+
+        marker_bebed2a825104755b2253eceb850abf1.bindPopup(popup_5ef8ae5a1e4c441399c04c302e8e10b2)
+        ;
+
+        
+    
+    
+            var marker_69139dddfab444bdba661c1d30900228 = L.marker(
+                [51.3406321, 12.3747329],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_05bec6f033054b65aac576f4c6de962f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_69139dddfab444bdba661c1d30900228.setIcon(beautify_icon_05bec6f033054b65aac576f4c6de962f);
+        
+    
+        var popup_60174fcff8fa41c9b644ea903596647a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b626217d4c24529befaaab8ded795f0 = $(`<div id="html_6b626217d4c24529befaaab8ded795f0" style="width: 100.0%; height: 100.0%;">Leipzig Livraison dans les temps : 1</div>`)[0];
+            popup_60174fcff8fa41c9b644ea903596647a.setContent(html_6b626217d4c24529befaaab8ded795f0);
+        
+
+        marker_69139dddfab444bdba661c1d30900228.bindPopup(popup_60174fcff8fa41c9b644ea903596647a)
+        ;
+
+        
+    
+    
+            var marker_49ec2bc95f2e477fa50b08babb3ef8cc = L.marker(
+                [45.0677551, 7.6824892],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_4eae6fc1fe3e4c84acc833770ac3c86f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_49ec2bc95f2e477fa50b08babb3ef8cc.setIcon(beautify_icon_4eae6fc1fe3e4c84acc833770ac3c86f);
+        
+    
+        var popup_5b4a15aff0dc425a9bf53ea93cedc91c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff15850372e047c1b4b269d423b6ba14 = $(`<div id="html_ff15850372e047c1b4b269d423b6ba14" style="width: 100.0%; height: 100.0%;">Torino Livraison dans les temps : 1</div>`)[0];
+            popup_5b4a15aff0dc425a9bf53ea93cedc91c.setContent(html_ff15850372e047c1b4b269d423b6ba14);
+        
+
+        marker_49ec2bc95f2e477fa50b08babb3ef8cc.bindPopup(popup_5b4a15aff0dc425a9bf53ea93cedc91c)
+        ;
+
+        
+    
+    
+            var marker_552857d4e15747e1817d5022712c6ee2 = L.marker(
+                [44.0505054, -123.0950506],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_4c96e2e7f0d04e3e80403e8cd1a270dd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_552857d4e15747e1817d5022712c6ee2.setIcon(beautify_icon_4c96e2e7f0d04e3e80403e8cd1a270dd);
+        
+    
+        var popup_872d73353c7845a182ec09826ce51e56 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4323b955b39b4b1a941880cf0cb88b8e = $(`<div id="html_4323b955b39b4b1a941880cf0cb88b8e" style="width: 100.0%; height: 100.0%;">Eugene Livraison dans les temps : 1</div>`)[0];
+            popup_872d73353c7845a182ec09826ce51e56.setContent(html_4323b955b39b4b1a941880cf0cb88b8e);
+        
+
+        marker_552857d4e15747e1817d5022712c6ee2.bindPopup(popup_872d73353c7845a182ec09826ce51e56)
+        ;
+
+        
+    
+    
+            var marker_0bcb1983cc0c413584df9282ecdea468 = L.marker(
+                [-34.6075682, -58.4370894],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_851f1d4fb0cc4597b56e8f8afb9a599a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_0bcb1983cc0c413584df9282ecdea468.setIcon(beautify_icon_851f1d4fb0cc4597b56e8f8afb9a599a);
+        
+    
+        var popup_cf6ad5135b0e4957a3d34d55721c5b63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4af069da7ba649fd950d5898d6a62a54 = $(`<div id="html_4af069da7ba649fd950d5898d6a62a54" style="width: 100.0%; height: 100.0%;">Buenos Aires Livraison dans les temps : 1</div>`)[0];
+            popup_cf6ad5135b0e4957a3d34d55721c5b63.setContent(html_4af069da7ba649fd950d5898d6a62a54);
+        
+
+        marker_0bcb1983cc0c413584df9282ecdea468.bindPopup(popup_cf6ad5135b0e4957a3d34d55721c5b63)
+        ;
+
+        
+    
+    
+            var marker_e5bb07aaf9fa49ccbd9d23628e0f862e = L.marker(
+                [43.6166163, -116.200886],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_8f486bc262174537b853428fbacd2719 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_e5bb07aaf9fa49ccbd9d23628e0f862e.setIcon(beautify_icon_8f486bc262174537b853428fbacd2719);
+        
+    
+        var popup_f328c3b0440b47e688f500caa0f0468d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a21b506b479243638bd1ef797456a041 = $(`<div id="html_a21b506b479243638bd1ef797456a041" style="width: 100.0%; height: 100.0%;">Boise Livraison dans les temps : 1</div>`)[0];
+            popup_f328c3b0440b47e688f500caa0f0468d.setContent(html_a21b506b479243638bd1ef797456a041);
+        
+
+        marker_e5bb07aaf9fa49ccbd9d23628e0f862e.bindPopup(popup_f328c3b0440b47e688f500caa0f0468d)
+        ;
+
+        
+    
+    
+            var marker_aa05831f9c454a94801481911dab186b = L.marker(
+                [48.8035403, 2.1266886],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_9e38474246604fcb8101d37b2ee097d5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_aa05831f9c454a94801481911dab186b.setIcon(beautify_icon_9e38474246604fcb8101d37b2ee097d5);
+        
+    
+        var popup_4f7e78377dd4463c87ba1a39e53a4f62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2c942085bf14717a4de5572cf77a869 = $(`<div id="html_a2c942085bf14717a4de5572cf77a869" style="width: 100.0%; height: 100.0%;">Versailles Livraison dans les temps : 1</div>`)[0];
+            popup_4f7e78377dd4463c87ba1a39e53a4f62.setContent(html_a2c942085bf14717a4de5572cf77a869);
+        
+
+        marker_aa05831f9c454a94801481911dab186b.bindPopup(popup_4f7e78377dd4463c87ba1a39e53a4f62)
+        ;
+
+        
+    
+    
+            var marker_46567f2a29884243b141170a74d59664 = L.marker(
+                [40.4167047, -3.7035825],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_e17f0364fdbd4ed9bbabf6ed3c5618df = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_46567f2a29884243b141170a74d59664.setIcon(beautify_icon_e17f0364fdbd4ed9bbabf6ed3c5618df);
+        
+    
+        var popup_54f92280b4074b19ba7bf67c8f4fc94e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a40643385714986a78ed8518d81e8fe = $(`<div id="html_2a40643385714986a78ed8518d81e8fe" style="width: 100.0%; height: 100.0%;">Madrid Livraison dans les temps : 1</div>`)[0];
+            popup_54f92280b4074b19ba7bf67c8f4fc94e.setContent(html_2a40643385714986a78ed8518d81e8fe);
+        
+
+        marker_46567f2a29884243b141170a74d59664.bindPopup(popup_54f92280b4074b19ba7bf67c8f4fc94e)
+        ;
+
+        
+    
+    
+            var marker_5d75557a8ea0416b83de2c3e1e57ca4e = L.marker(
+                [50.8465573, 4.351697],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_f829ab9117a74fff8b170dfc117c00d7 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_5d75557a8ea0416b83de2c3e1e57ca4e.setIcon(beautify_icon_f829ab9117a74fff8b170dfc117c00d7);
+        
+    
+        var popup_7bdbb213511646e69cca0f48e6b09259 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d12458e4bd1341ff87ad28046fa2ac56 = $(`<div id="html_d12458e4bd1341ff87ad28046fa2ac56" style="width: 100.0%; height: 100.0%;">Bruxelles Livraison dans les temps : 1</div>`)[0];
+            popup_7bdbb213511646e69cca0f48e6b09259.setContent(html_d12458e4bd1341ff87ad28046fa2ac56);
+        
+
+        marker_5d75557a8ea0416b83de2c3e1e57ca4e.bindPopup(popup_7bdbb213511646e69cca0f48e6b09259)
+        ;
+
+        
+    
+    
+            var marker_5f8d4807f762435aa197c2cf8ebfc326 = L.marker(
+                [52.2319581, 21.0067249],
+                {}
+            ).addTo(feature_group_sub_group_0b074f49da34442794c898597b6c218b);
+        
+    
+            var beautify_icon_ffba4cb5f7fe44c4abd93d3ee5c4b185 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_5f8d4807f762435aa197c2cf8ebfc326.setIcon(beautify_icon_ffba4cb5f7fe44c4abd93d3ee5c4b185);
+        
+    
+        var popup_2bde1f8f5bcf4bdc85609fab7e4f4e1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8538a542d194593ad32297704923957 = $(`<div id="html_f8538a542d194593ad32297704923957" style="width: 100.0%; height: 100.0%;">Warsaw Livraison dans les temps : 1</div>`)[0];
+            popup_2bde1f8f5bcf4bdc85609fab7e4f4e1c.setContent(html_f8538a542d194593ad32297704923957);
+        
+
+        marker_5f8d4807f762435aa197c2cf8ebfc326.bindPopup(popup_2bde1f8f5bcf4bdc85609fab7e4f4e1c)
+        ;
+
+        
+    
+    
+            var feature_group_sub_group_a92b6692b88949f190d055970350876e = L.featureGroup.subGroup(
+                marker_cluster_157f6f30b4814692b8cb8c353bf6f163
+            );
+            feature_group_sub_group_a92b6692b88949f190d055970350876e.addTo(map_d9b1dc8cd7fb4218958d756206b56f18);
+        
+    
+            var marker_1b8092be15d543dfbdff3332a19bd5ca = L.marker(
+                [49.2577886, 4.031926],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_ae9e5ea02e874b759183455433e36daf = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_1b8092be15d543dfbdff3332a19bd5ca.setIcon(beautify_icon_ae9e5ea02e874b759183455433e36daf);
+        
+    
+        var popup_7d9a59e1af4c41978ff8858cb3bed667 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09aa03f218e4432097b3d9aeaaed39c9 = $(`<div id="html_09aa03f218e4432097b3d9aeaaed39c9" style="width: 100.0%; height: 100.0%;">Reims Livraison dans les temps : 5</div>`)[0];
+            popup_7d9a59e1af4c41978ff8858cb3bed667.setContent(html_09aa03f218e4432097b3d9aeaaed39c9);
+        
+
+        marker_1b8092be15d543dfbdff3332a19bd5ca.bindPopup(popup_7d9a59e1af4c41978ff8858cb3bed667)
+        ;
+
+        
+    
+    
+            var marker_ad88b41b5bf043d99b1d29baf6c123ff = L.marker(
+                [51.9625101, 7.6251879],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_088e3188a1e54a23950c34548ff3d813 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_ad88b41b5bf043d99b1d29baf6c123ff.setIcon(beautify_icon_088e3188a1e54a23950c34548ff3d813);
+        
+    
+        var popup_05ac854441024c9ba62d5df2f6aef43d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60c75d4af2e64a1b8c6813861fcad7a8 = $(`<div id="html_60c75d4af2e64a1b8c6813861fcad7a8" style="width: 100.0%; height: 100.0%;">Münster Livraison dans les temps : 6</div>`)[0];
+            popup_05ac854441024c9ba62d5df2f6aef43d.setContent(html_60c75d4af2e64a1b8c6813861fcad7a8);
+        
+
+        marker_ad88b41b5bf043d99b1d29baf6c123ff.bindPopup(popup_05ac854441024c9ba62d5df2f6aef43d)
+        ;
+
+        
+    
+    
+            var marker_68fcf2eb1e1f403e8c38ef9913ad9c9e = L.marker(
+                [-22.9110137, -43.2093727],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_3b314da245814fb8bc986ab5b016e2e5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_68fcf2eb1e1f403e8c38ef9913ad9c9e.setIcon(beautify_icon_3b314da245814fb8bc986ab5b016e2e5);
+        
+    
+        var popup_87da3b820f6f421587b27516997eacac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4576c8e4123a4bf2b5c8ec43bc30f5e1 = $(`<div id="html_4576c8e4123a4bf2b5c8ec43bc30f5e1" style="width: 100.0%; height: 100.0%;">Rio de Janeiro Livraison dans les temps : 33</div>`)[0];
+            popup_87da3b820f6f421587b27516997eacac.setContent(html_4576c8e4123a4bf2b5c8ec43bc30f5e1);
+        
+
+        marker_68fcf2eb1e1f403e8c38ef9913ad9c9e.bindPopup(popup_87da3b820f6f421587b27516997eacac)
+        ;
+
+        
+    
+    
+            var marker_81efd10cdbbc45c994ec6e1023eb4e64 = L.marker(
+                [45.7578137, 4.8320114],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_0f376a9b9ca143638836c65c95569226 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_81efd10cdbbc45c994ec6e1023eb4e64.setIcon(beautify_icon_0f376a9b9ca143638836c65c95569226);
+        
+    
+        var popup_2e01ac070e534253b28fc0144fa1d1d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_045a240bf7d14c808756a6b07b279715 = $(`<div id="html_045a240bf7d14c808756a6b07b279715" style="width: 100.0%; height: 100.0%;">Lyon Livraison dans les temps : 10</div>`)[0];
+            popup_2e01ac070e534253b28fc0144fa1d1d6.setContent(html_045a240bf7d14c808756a6b07b279715);
+        
+
+        marker_81efd10cdbbc45c994ec6e1023eb4e64.bindPopup(popup_2e01ac070e534253b28fc0144fa1d1d6)
+        ;
+
+        
+    
+    
+            var marker_5b84cd1a794d41c1951b17993c6b07e8 = L.marker(
+                [50.4120332, 4.4436244],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_7846df703d0b425dbef2acafb189f848 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_5b84cd1a794d41c1951b17993c6b07e8.setIcon(beautify_icon_7846df703d0b425dbef2acafb189f848);
+        
+    
+        var popup_2d31983ce6fa459db0115b4ddeae85b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b34f94a41a7e41c4af059ca5421be7f6 = $(`<div id="html_b34f94a41a7e41c4af059ca5421be7f6" style="width: 100.0%; height: 100.0%;">Charleroi Livraison dans les temps : 11</div>`)[0];
+            popup_2d31983ce6fa459db0115b4ddeae85b9.setContent(html_b34f94a41a7e41c4af059ca5421be7f6);
+        
+
+        marker_5b84cd1a794d41c1951b17993c6b07e8.bindPopup(popup_2d31983ce6fa459db0115b4ddeae85b9)
+        ;
+
+        
+    
+    
+            var marker_70e98748f707478db0f10e48aec1d195 = L.marker(
+                [46.9482713, 7.4514512],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_5edf4c9860b446b798ee7f6195cf675d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_70e98748f707478db0f10e48aec1d195.setIcon(beautify_icon_5edf4c9860b446b798ee7f6195cf675d);
+        
+    
+        var popup_0ce2a5561eb64a94bc6ba65589071263 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0352c86822a480a9d01850449d200bb = $(`<div id="html_e0352c86822a480a9d01850449d200bb" style="width: 100.0%; height: 100.0%;">Bern Livraison dans les temps : 8</div>`)[0];
+            popup_0ce2a5561eb64a94bc6ba65589071263.setContent(html_e0352c86822a480a9d01850449d200bb);
+        
+
+        marker_70e98748f707478db0f10e48aec1d195.bindPopup(popup_0ce2a5561eb64a94bc6ba65589071263)
+        ;
+
+        
+    
+    
+            var marker_e97972a208a843e59a7ed8d86c19007a = L.marker(
+                [46.2017559, 6.1466014],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_c6368ca56ad24dbfa1f010d4a4c34e07 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_e97972a208a843e59a7ed8d86c19007a.setIcon(beautify_icon_c6368ca56ad24dbfa1f010d4a4c34e07);
+        
+    
+        var popup_9fa50ddbbc624f2da07904dfe2182470 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3fc92d844f740a7bc17c9bfe02634b3 = $(`<div id="html_c3fc92d844f740a7bc17c9bfe02634b3" style="width: 100.0%; height: 100.0%;">Geneve Livraison dans les temps : 9</div>`)[0];
+            popup_9fa50ddbbc624f2da07904dfe2182470.setContent(html_c3fc92d844f740a7bc17c9bfe02634b3);
+        
+
+        marker_e97972a208a843e59a7ed8d86c19007a.bindPopup(popup_9fa50ddbbc624f2da07904dfe2182470)
+        ;
+
+        
+    
+    
+            var marker_1c08aedac2ff44f49298342e92acbff7 = L.marker(
+                [-22.4683626, -44.4463494],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_abe99d4ee3814e0c929151e491ba8f77 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_1c08aedac2ff44f49298342e92acbff7.setIcon(beautify_icon_abe99d4ee3814e0c929151e491ba8f77);
+        
+    
+        var popup_128c18bcd87a47beaeba9aebfb7a3c60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe86bffe04ce48b1a520a375b13e565f = $(`<div id="html_fe86bffe04ce48b1a520a375b13e565f" style="width: 100.0%; height: 100.0%;">Resende Livraison dans les temps : 9</div>`)[0];
+            popup_128c18bcd87a47beaeba9aebfb7a3c60.setContent(html_fe86bffe04ce48b1a520a375b13e565f);
+        
+
+        marker_1c08aedac2ff44f49298342e92acbff7.bindPopup(popup_128c18bcd87a47beaeba9aebfb7a3c60)
+        ;
+
+        
+    
+    
+            var marker_37680b45018d4f13a02b2cafea65b499 = L.marker(
+                [18.5200904, -70.2076771],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_c78326b568344211a7ed3fd06c3d4bb1 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_37680b45018d4f13a02b2cafea65b499.setIcon(beautify_icon_c78326b568344211a7ed3fd06c3d4bb1);
+        
+    
+        var popup_6b10c7a88c164bfe8b21d5311ad18400 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6ffce14f1b74d2eb101067fafafca0a = $(`<div id="html_a6ffce14f1b74d2eb101067fafafca0a" style="width: 100.0%; height: 100.0%;">San Cristobal Livraison dans les temps : 16</div>`)[0];
+            popup_6b10c7a88c164bfe8b21d5311ad18400.setContent(html_a6ffce14f1b74d2eb101067fafafca0a);
+        
+
+        marker_37680b45018d4f13a02b2cafea65b499.bindPopup(popup_6b10c7a88c164bfe8b21d5311ad18400)
+        ;
+
+        
+    
+    
+            var marker_19d8f8c726c34741853e1455fa414c7b = L.marker(
+                [47.0708678, 15.4382786],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_937ecd291e934505b3c80bc96f9c3777 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_19d8f8c726c34741853e1455fa414c7b.setIcon(beautify_icon_937ecd291e934505b3c80bc96f9c3777);
+        
+    
+        var popup_b13400b43e4d4cbeaada85769d4e7e86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e67052e4a394ff2a1801f1f123fd97c = $(`<div id="html_4e67052e4a394ff2a1801f1f123fd97c" style="width: 100.0%; height: 100.0%;">Graz Livraison dans les temps : 28</div>`)[0];
+            popup_b13400b43e4d4cbeaada85769d4e7e86.setContent(html_4e67052e4a394ff2a1801f1f123fd97c);
+        
+
+        marker_19d8f8c726c34741853e1455fa414c7b.bindPopup(popup_b13400b43e4d4cbeaada85769d4e7e86)
+        ;
+
+        
+    
+    
+            var marker_9b98da51a0b7430db4d78a5884da60c6 = L.marker(
+                [16.7323714, -93.1177512],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_3a6708a2698743a9873d49c3ea7caef7 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_9b98da51a0b7430db4d78a5884da60c6.setIcon(beautify_icon_3a6708a2698743a9873d49c3ea7caef7);
+        
+    
+        var popup_7477e3f4f514442c97f0dd0f6417e8fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb8000ff2fa54f069631d3c7a2e019ea = $(`<div id="html_fb8000ff2fa54f069631d3c7a2e019ea" style="width: 100.0%; height: 100.0%;">Mexico D.F. Livraison dans les temps : 27</div>`)[0];
+            popup_7477e3f4f514442c97f0dd0f6417e8fc.setContent(html_fb8000ff2fa54f069631d3c7a2e019ea);
+        
+
+        marker_9b98da51a0b7430db4d78a5884da60c6.bindPopup(popup_7477e3f4f514442c97f0dd0f6417e8fc)
+        ;
+
+        
+    
+    
+            var marker_3796ab24e012445d9347e73e78bc5264 = L.marker(
+                [57.5353003, -153.9766675174759],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_f51ed9eae1f64647a993b742ba2a4220 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_3796ab24e012445d9347e73e78bc5264.setIcon(beautify_icon_f51ed9eae1f64647a993b742ba2a4220);
+        
+    
+        var popup_4fa236ccf1b0421c9a5af6ffa48fab88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_341dd79624d14965acf0bcd5b5e68a98 = $(`<div id="html_341dd79624d14965acf0bcd5b5e68a98" style="width: 100.0%; height: 100.0%;">Kln Livraison dans les temps : 10</div>`)[0];
+            popup_4fa236ccf1b0421c9a5af6ffa48fab88.setContent(html_341dd79624d14965acf0bcd5b5e68a98);
+        
+
+        marker_3796ab24e012445d9347e73e78bc5264.bindPopup(popup_4fa236ccf1b0421c9a5af6ffa48fab88)
+        ;
+
+        
+    
+    
+            var marker_896ff395036e4235810fd9b532eada61 = L.marker(
+                [35.0841034, -106.6509851],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_a20c416021e94f05bd5604743d3e3702 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_896ff395036e4235810fd9b532eada61.setIcon(beautify_icon_a20c416021e94f05bd5604743d3e3702);
+        
+    
+        var popup_0c278ab7c6e64a73a8b8d2c15a8ed59c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_961f240dfc3342e6b62f6eeee30447e1 = $(`<div id="html_961f240dfc3342e6b62f6eeee30447e1" style="width: 100.0%; height: 100.0%;">Albuquerque Livraison dans les temps : 17</div>`)[0];
+            popup_0c278ab7c6e64a73a8b8d2c15a8ed59c.setContent(html_961f240dfc3342e6b62f6eeee30447e1);
+        
+
+        marker_896ff395036e4235810fd9b532eada61.bindPopup(popup_0c278ab7c6e64a73a8b8d2c15a8ed59c)
+        ;
+
+        
+    
+    
+            var marker_9febcdb176664a0199d3c3974aaaec74 = L.marker(
+                [48.584614, 7.7507127],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_2896790dc25041869c64101865559ef5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_9febcdb176664a0199d3c3974aaaec74.setIcon(beautify_icon_2896790dc25041869c64101865559ef5);
+        
+    
+        var popup_0b7b1dc5f9724b69b923b6ca5fb82784 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06ee993e47f34c7788569d4a6275ddb9 = $(`<div id="html_06ee993e47f34c7788569d4a6275ddb9" style="width: 100.0%; height: 100.0%;">Strasbourg Livraison dans les temps : 11</div>`)[0];
+            popup_0b7b1dc5f9724b69b923b6ca5fb82784.setContent(html_06ee993e47f34c7788569d4a6275ddb9);
+        
+
+        marker_9febcdb176664a0199d3c3974aaaec74.bindPopup(popup_0b7b1dc5f9724b69b923b6ca5fb82784)
+        ;
+
+        
+    
+    
+            var marker_099afd11b59044bd9d28c000f3cc9991 = L.marker(
+                [65.0118734, 25.4716809],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_abfd54e618774fa6b7a914156d8c3f5f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_099afd11b59044bd9d28c000f3cc9991.setIcon(beautify_icon_abfd54e618774fa6b7a914156d8c3f5f);
+        
+    
+        var popup_4c87fbbde2914354b47c947894a20fc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1b1135772bf404e8fa55029b2f7b566 = $(`<div id="html_c1b1135772bf404e8fa55029b2f7b566" style="width: 100.0%; height: 100.0%;">Oulu Livraison dans les temps : 14</div>`)[0];
+            popup_4c87fbbde2914354b47c947894a20fc8.setContent(html_c1b1135772bf404e8fa55029b2f7b566);
+        
+
+        marker_099afd11b59044bd9d28c000f3cc9991.bindPopup(popup_4c87fbbde2914354b47c947894a20fc8)
+        ;
+
+        
+    
+    
+            var marker_ef46520c8d3c4206a1f1450469f2945e = L.marker(
+                [47.9929573, 11.7109281],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_a1a7d56579bd4449b1df41adbce46ce2 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_ef46520c8d3c4206a1f1450469f2945e.setIcon(beautify_icon_a1a7d56579bd4449b1df41adbce46ce2);
+        
+    
+        var popup_03136a73939945db9ad31627ae6dd3e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45b92a022f5e43f9880c7d33a509a16a = $(`<div id="html_45b92a022f5e43f9880c7d33a509a16a" style="width: 100.0%; height: 100.0%;">Mnchen Livraison dans les temps : 15</div>`)[0];
+            popup_03136a73939945db9ad31627ae6dd3e0.setContent(html_45b92a022f5e43f9880c7d33a509a16a);
+        
+
+        marker_ef46520c8d3c4206a1f1450469f2945e.bindPopup(popup_03136a73939945db9ad31627ae6dd3e0)
+        ;
+
+        
+    
+    
+            var marker_c24d9c3fa1c64caba4cada69c5cf5511 = L.marker(
+                [10.506098, -66.9146017],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_53c214aee93248f59c62809bbfb33dd5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_c24d9c3fa1c64caba4cada69c5cf5511.setIcon(beautify_icon_53c214aee93248f59c62809bbfb33dd5);
+        
+    
+        var popup_b8b69d5bc2d249a2a885095861b7f30a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e149bf33e854763b6a5c909cd7cdab5 = $(`<div id="html_1e149bf33e854763b6a5c909cd7cdab5" style="width: 100.0%; height: 100.0%;">Caracas Livraison dans les temps : 2</div>`)[0];
+            popup_b8b69d5bc2d249a2a885095861b7f30a.setContent(html_1e149bf33e854763b6a5c909cd7cdab5);
+        
+
+        marker_c24d9c3fa1c64caba4cada69c5cf5511.bindPopup(popup_b8b69d5bc2d249a2a885095861b7f30a)
+        ;
+
+        
+    
+    
+            var marker_7087f0f2c4a040938dfc705131c5fc35 = L.marker(
+                [47.6038321, -122.3300624],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_b090255609b140b7ad6ce1d5d399ad2b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_7087f0f2c4a040938dfc705131c5fc35.setIcon(beautify_icon_b090255609b140b7ad6ce1d5d399ad2b);
+        
+    
+        var popup_58ecce0942294cffab05ec97739726f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4264d4f48c24ea7bcb7d5668e54f43a = $(`<div id="html_c4264d4f48c24ea7bcb7d5668e54f43a" style="width: 100.0%; height: 100.0%;">Seattle Livraison dans les temps : 12</div>`)[0];
+            popup_58ecce0942294cffab05ec97739726f3.setContent(html_c4264d4f48c24ea7bcb7d5668e54f43a);
+        
+
+        marker_7087f0f2c4a040938dfc705131c5fc35.bindPopup(popup_58ecce0942294cffab05ec97739726f3)
+        ;
+
+        
+    
+    
+            var marker_aa5e48d584274fc5953296433a44eb1e = L.marker(
+                [51.098481, 14.514475],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_3e652970b6c542fea43168fa7a6c4984 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_aa5e48d584274fc5953296433a44eb1e.setIcon(beautify_icon_3e652970b6c542fea43168fa7a6c4984);
+        
+    
+        var popup_219b8c4f9c7d46a498e84f74a955af26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e122b61cbed413f94eb565ab1b2cfce = $(`<div id="html_9e122b61cbed413f94eb565ab1b2cfce" style="width: 100.0%; height: 100.0%;">Cunewalde Livraison dans les temps : 25</div>`)[0];
+            popup_219b8c4f9c7d46a498e84f74a955af26.setContent(html_9e122b61cbed413f94eb565ab1b2cfce);
+        
+
+        marker_aa5e48d584274fc5953296433a44eb1e.bindPopup(popup_219b8c4f9c7d46a498e84f74a955af26)
+        ;
+
+        
+    
+    
+            var marker_c09bfec77d5f4679a5a86da594f1e9ed = L.marker(
+                [45.756655699999996, 9.754219200862249],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_ebc1fbb1527c46688ab8a2003c23ddea = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_c09bfec77d5f4679a5a86da594f1e9ed.setIcon(beautify_icon_ebc1fbb1527c46688ab8a2003c23ddea);
+        
+    
+        var popup_a7b713c5854b44708271e3ef61add5d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a26c421cd52845ee85c25573c32fc4d7 = $(`<div id="html_a26c421cd52845ee85c25573c32fc4d7" style="width: 100.0%; height: 100.0%;">Bergamo Livraison dans les temps : 10</div>`)[0];
+            popup_a7b713c5854b44708271e3ef61add5d4.setContent(html_a26c421cd52845ee85c25573c32fc4d7);
+        
+
+        marker_c09bfec77d5f4679a5a86da594f1e9ed.bindPopup(popup_a7b713c5854b44708271e3ef61add5d4)
+        ;
+
+        
+    
+    
+            var marker_6f7e273f1d0141c7b5ac42acd54c5f2b = L.marker(
+                [51.3406321, 12.3747329],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_258bc4e672a84d2da1edd262b64cefd0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_6f7e273f1d0141c7b5ac42acd54c5f2b.setIcon(beautify_icon_258bc4e672a84d2da1edd262b64cefd0);
+        
+    
+        var popup_320e7b1e04e04a05827dae35f8e00b6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fee59687c8d47fdae4dd2c42b5c0c5a = $(`<div id="html_9fee59687c8d47fdae4dd2c42b5c0c5a" style="width: 100.0%; height: 100.0%;">Leipzig Livraison dans les temps : 4</div>`)[0];
+            popup_320e7b1e04e04a05827dae35f8e00b6e.setContent(html_9fee59687c8d47fdae4dd2c42b5c0c5a);
+        
+
+        marker_6f7e273f1d0141c7b5ac42acd54c5f2b.bindPopup(popup_320e7b1e04e04a05827dae35f8e00b6e)
+        ;
+
+        
+    
+    
+            var marker_a39ada13f3324375a4981816bd5b911c = L.marker(
+                [20.7533451, 74.4989584],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_52dcf0b35da94c1996f85de2799467ff = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_a39ada13f3324375a4981816bd5b911c.setIcon(beautify_icon_52dcf0b35da94c1996f85de2799467ff);
+        
+    
+        var popup_ddef247f7ccc40fa9b670bb194ad01ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e04939f04cc54a9cac727d5952b7f0d3 = $(`<div id="html_e04939f04cc54a9cac727d5952b7f0d3" style="width: 100.0%; height: 100.0%;">Lule Livraison dans les temps : 16</div>`)[0];
+            popup_ddef247f7ccc40fa9b670bb194ad01ef.setContent(html_e04939f04cc54a9cac727d5952b7f0d3);
+        
+
+        marker_a39ada13f3324375a4981816bd5b911c.bindPopup(popup_ddef247f7ccc40fa9b670bb194ad01ef)
+        ;
+
+        
+    
+    
+            var marker_40bb2bcd08b74fe3aac6885eab886d42 = L.marker(
+                [50.1106444, 8.6820917],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_92e11a3cdd4646e79cece506a382ad61 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_40bb2bcd08b74fe3aac6885eab886d42.setIcon(beautify_icon_92e11a3cdd4646e79cece506a382ad61);
+        
+    
+        var popup_8fed4f7cb51f4097ba476a14182a851a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae6fa626c17a4e2e84bbffa50722f319 = $(`<div id="html_ae6fa626c17a4e2e84bbffa50722f319" style="width: 100.0%; height: 100.0%;">Frankfurt a.M. Livraison dans les temps : 13</div>`)[0];
+            popup_8fed4f7cb51f4097ba476a14182a851a.setContent(html_ae6fa626c17a4e2e84bbffa50722f319);
+        
+
+        marker_40bb2bcd08b74fe3aac6885eab886d42.bindPopup(popup_8fed4f7cb51f4097ba476a14182a851a)
+        ;
+
+        
+    
+    
+            var marker_14e44a8f547a437ea717557b37130a7d = L.marker(
+                [40.4167047, -3.7035825],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_3689a6ee2fe54675bb0cf7853861a524 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_14e44a8f547a437ea717557b37130a7d.setIcon(beautify_icon_3689a6ee2fe54675bb0cf7853861a524);
+        
+    
+        var popup_388c85ea8c0a4306ba27351364f79e77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb9e52eb06384092ab720b37b7607035 = $(`<div id="html_eb9e52eb06384092ab720b37b7607035" style="width: 100.0%; height: 100.0%;">Madrid Livraison dans les temps : 7</div>`)[0];
+            popup_388c85ea8c0a4306ba27351364f79e77.setContent(html_eb9e52eb06384092ab720b37b7607035);
+        
+
+        marker_14e44a8f547a437ea717557b37130a7d.bindPopup(popup_388c85ea8c0a4306ba27351364f79e77)
+        ;
+
+        
+    
+    
+            var marker_d5ab5a2491d542809c1884fa8ef845c9 = L.marker(
+                [10.0740372, -69.3215667],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_058983af4aa94cffbabb25d93bc85b1f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_d5ab5a2491d542809c1884fa8ef845c9.setIcon(beautify_icon_058983af4aa94cffbabb25d93bc85b1f);
+        
+    
+        var popup_d6502077ac874276ac9dc2b2dbda3a17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5758c0b966a04bcdb3c6dbc299747214 = $(`<div id="html_5758c0b966a04bcdb3c6dbc299747214" style="width: 100.0%; height: 100.0%;">Barquisimeto Livraison dans les temps : 12</div>`)[0];
+            popup_d6502077ac874276ac9dc2b2dbda3a17.setContent(html_5758c0b966a04bcdb3c6dbc299747214);
+        
+
+        marker_d5ab5a2491d542809c1884fa8ef845c9.bindPopup(popup_d6502077ac874276ac9dc2b2dbda3a17)
+        ;
+
+        
+    
+    
+            var marker_5e72374167ca4fdfa5524353808f4b51 = L.marker(
+                [44.608664, 10.594796841892734],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_08da166f07104482951d7e7a8ced145a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_5e72374167ca4fdfa5524353808f4b51.setIcon(beautify_icon_08da166f07104482951d7e7a8ced145a);
+        
+    
+        var popup_44347efe12ca4d10a6e0565973bb34fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3098f67cc825443e8910f3e0673024de = $(`<div id="html_3098f67cc825443e8910f3e0673024de" style="width: 100.0%; height: 100.0%;">Reggio Emilia Livraison dans les temps : 10</div>`)[0];
+            popup_44347efe12ca4d10a6e0565973bb34fc.setContent(html_3098f67cc825443e8910f3e0673024de);
+        
+
+        marker_5e72374167ca4fdfa5524353808f4b51.bindPopup(popup_44347efe12ca4d10a6e0565973bb34fc)
+        ;
+
+        
+    
+    
+            var marker_560d122caf2e4b4a90eeee23dde948be = L.marker(
+                [51.5073219, -0.1276474],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_35a53a467af2442cad0edd045d217dab = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_560d122caf2e4b4a90eeee23dde948be.setIcon(beautify_icon_35a53a467af2442cad0edd045d217dab);
+        
+    
+        var popup_32396e7a4d584a2ebf8f24dd85c43c70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_049ae16d22554c5d86450402b6a16b65 = $(`<div id="html_049ae16d22554c5d86450402b6a16b65" style="width: 100.0%; height: 100.0%;">London Livraison dans les temps : 30</div>`)[0];
+            popup_32396e7a4d584a2ebf8f24dd85c43c70.setContent(html_049ae16d22554c5d86450402b6a16b65);
+        
+
+        marker_560d122caf2e4b4a90eeee23dde948be.bindPopup(popup_32396e7a4d584a2ebf8f24dd85c43c70)
+        ;
+
+        
+    
+    
+            var marker_2a815a27d76b45c48b81e40adb846504 = L.marker(
+                [-23.5506507, -46.6333824],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_1ea463caf5264112ac14d806e14293ce = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_2a815a27d76b45c48b81e40adb846504.setIcon(beautify_icon_1ea463caf5264112ac14d806e14293ce);
+        
+    
+        var popup_7496712c3e8f4396837c16982d23c099 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42b460ecd11a456aa8e716ab1356927d = $(`<div id="html_42b460ecd11a456aa8e716ab1356927d" style="width: 100.0%; height: 100.0%;">Sao Paulo Livraison dans les temps : 30</div>`)[0];
+            popup_7496712c3e8f4396837c16982d23c099.setContent(html_42b460ecd11a456aa8e716ab1356927d);
+        
+
+        marker_2a815a27d76b45c48b81e40adb846504.bindPopup(popup_7496712c3e8f4396837c16982d23c099)
+        ;
+
+        
+    
+    
+            var marker_4dd7f777a0ed4b63b935971e28184b98 = L.marker(
+                [51.898627, -8.4705942],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_885b050a40274504ba83ff596bba69bd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_4dd7f777a0ed4b63b935971e28184b98.setIcon(beautify_icon_885b050a40274504ba83ff596bba69bd);
+        
+    
+        var popup_0038beacac344f52b72502f28ed924b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eac9e3a39a9b4856a1f62bc3a374c617 = $(`<div id="html_eac9e3a39a9b4856a1f62bc3a374c617" style="width: 100.0%; height: 100.0%;">Cork Livraison dans les temps : 16</div>`)[0];
+            popup_0038beacac344f52b72502f28ed924b4.setContent(html_eac9e3a39a9b4856a1f62bc3a374c617);
+        
+
+        marker_4dd7f777a0ed4b63b935971e28184b98.bindPopup(popup_0038beacac344f52b72502f28ed924b4)
+        ;
+
+        
+    
+    
+            var marker_93f661c63b7a4b8ea70e142ca33f3811 = L.marker(
+                [48.7784485, 9.1800132],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_c2e39fd92da74734a9c4d6267b68d444 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_93f661c63b7a4b8ea70e142ca33f3811.setIcon(beautify_icon_c2e39fd92da74734a9c4d6267b68d444);
+        
+    
+        var popup_0c629e29afeb40d9bb84421006374c2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df12454185db41399f578a12eedb904d = $(`<div id="html_df12454185db41399f578a12eedb904d" style="width: 100.0%; height: 100.0%;">Stuttgart Livraison dans les temps : 10</div>`)[0];
+            popup_0c629e29afeb40d9bb84421006374c2a.setContent(html_df12454185db41399f578a12eedb904d);
+        
+
+        marker_93f661c63b7a4b8ea70e142ca33f3811.bindPopup(popup_0c629e29afeb40d9bb84421006374c2a)
+        ;
+
+        
+    
+    
+            var marker_2d68423b05ee458dbaa4e2a398501a24 = L.marker(
+                [37.3886303, -5.9953403],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_66c260d7038648f1ae88c94331bf85c3 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_2d68423b05ee458dbaa4e2a398501a24.setIcon(beautify_icon_66c260d7038648f1ae88c94331bf85c3);
+        
+    
+        var popup_52049c0d49724d6796f2accdb76ce4e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_756d67dc1f4e4723bf7295fc169f1745 = $(`<div id="html_756d67dc1f4e4723bf7295fc169f1745" style="width: 100.0%; height: 100.0%;">Sevilla Livraison dans les temps : 10</div>`)[0];
+            popup_52049c0d49724d6796f2accdb76ce4e5.setContent(html_756d67dc1f4e4723bf7295fc169f1745);
+        
+
+        marker_2d68423b05ee458dbaa4e2a398501a24.bindPopup(popup_52049c0d49724d6796f2accdb76ce4e5)
+        ;
+
+        
+    
+    
+            var marker_ad371d3a24004c5c85c2485ca2dfff92 = L.marker(
+                [61.2163129, -149.894852],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_652cca048977422bb328397f8ff5e0ac = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_ad371d3a24004c5c85c2485ca2dfff92.setIcon(beautify_icon_652cca048977422bb328397f8ff5e0ac);
+        
+    
+        var popup_9fda711a347f4603aaec22e6f13299bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c542216e84a34857881feec259b16ca0 = $(`<div id="html_c542216e84a34857881feec259b16ca0" style="width: 100.0%; height: 100.0%;">Anchorage Livraison dans les temps : 10</div>`)[0];
+            popup_9fda711a347f4603aaec22e6f13299bd.setContent(html_c542216e84a34857881feec259b16ca0);
+        
+
+        marker_ad371d3a24004c5c85c2485ca2dfff92.bindPopup(popup_9fda711a347f4603aaec22e6f13299bd)
+        ;
+
+        
+    
+    
+            var marker_a2be7b993e2b4f449d9a8702e53ded07 = L.marker(
+                [45.5202471, -122.6741949],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_0e0a30b8158d4e68bc472c407e1b7a2e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_a2be7b993e2b4f449d9a8702e53ded07.setIcon(beautify_icon_0e0a30b8158d4e68bc472c407e1b7a2e);
+        
+    
+        var popup_39f14a348a0d49b1b618a91c08d0259a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bae7789f6f6d494ea586c72ea42eccbb = $(`<div id="html_bae7789f6f6d494ea586c72ea42eccbb" style="width: 100.0%; height: 100.0%;">Portland Livraison dans les temps : 12</div>`)[0];
+            popup_39f14a348a0d49b1b618a91c08d0259a.setContent(html_bae7789f6f6d494ea586c72ea42eccbb);
+        
+
+        marker_a2be7b993e2b4f449d9a8702e53ded07.bindPopup(popup_39f14a348a0d49b1b618a91c08d0259a)
+        ;
+
+        
+    
+    
+            var marker_8490f74487e14d4bb078badc391bab40 = L.marker(
+                [47.2186371, -1.5541362],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_d9bdda115510423eaac5e67d18f67244 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_8490f74487e14d4bb078badc391bab40.setIcon(beautify_icon_d9bdda115510423eaac5e67d18f67244);
+        
+    
+        var popup_ef0ee5b2505444bb86ef739b3ab20c9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_018182d537014d69948a29ff8dda359e = $(`<div id="html_018182d537014d69948a29ff8dda359e" style="width: 100.0%; height: 100.0%;">Nantes Livraison dans les temps : 7</div>`)[0];
+            popup_ef0ee5b2505444bb86ef739b3ab20c9d.setContent(html_018182d537014d69948a29ff8dda359e);
+        
+
+        marker_8490f74487e14d4bb078badc391bab40.bindPopup(popup_ef0ee5b2505444bb86ef739b3ab20c9d)
+        ;
+
+        
+    
+    
+            var marker_6dc6a67e426c439194f429c95935d9c0 = L.marker(
+                [50.757624750000005, -1.3035640666867363],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_41f5f38ed85f4f969a45eff7f97e59a9 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_6dc6a67e426c439194f429c95935d9c0.setIcon(beautify_icon_41f5f38ed85f4f969a45eff7f97e59a9);
+        
+    
+        var popup_baeb4e5bfc3a4fcbb86c6652c1c19897 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ae771668c0445c9acb128bfd269172c = $(`<div id="html_1ae771668c0445c9acb128bfd269172c" style="width: 100.0%; height: 100.0%;">Cowes Livraison dans les temps : 9</div>`)[0];
+            popup_baeb4e5bfc3a4fcbb86c6652c1c19897.setContent(html_1ae771668c0445c9acb128bfd269172c);
+        
+
+        marker_6dc6a67e426c439194f429c95935d9c0.bindPopup(popup_baeb4e5bfc3a4fcbb86c6652c1c19897)
+        ;
+
+        
+    
+    
+            var marker_b307e5a432224320beb78220f44b45e5 = L.marker(
+                [52.8455492, 13.2461296],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_c990e83f84a9494c88f22d42838af612 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_b307e5a432224320beb78220f44b45e5.setIcon(beautify_icon_c990e83f84a9494c88f22d42838af612);
+        
+    
+        var popup_53499bfad5ef49f58508bdc74bd8fe0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ed911f6f4cf43869612cd0ef0ba548c = $(`<div id="html_3ed911f6f4cf43869612cd0ef0ba548c" style="width: 100.0%; height: 100.0%;">Brandenburg Livraison dans les temps : 14</div>`)[0];
+            popup_53499bfad5ef49f58508bdc74bd8fe0c.setContent(html_3ed911f6f4cf43869612cd0ef0ba548c);
+        
+
+        marker_b307e5a432224320beb78220f44b45e5.bindPopup(popup_53499bfad5ef49f58508bdc74bd8fe0c)
+        ;
+
+        
+    
+    
+            var marker_df137cfed69b4f1cb4c25bd16e4b67b4 = L.marker(
+                [43.6166163, -116.200886],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_bbeb4cba11ad4b878ec4acf01348eb04 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_df137cfed69b4f1cb4c25bd16e4b67b4.setIcon(beautify_icon_bbeb4cba11ad4b878ec4acf01348eb04);
+        
+    
+        var popup_bf34833435d645738dfc5483319e20d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11840052f3c5459bb73bc862c37dacb2 = $(`<div id="html_11840052f3c5459bb73bc862c37dacb2" style="width: 100.0%; height: 100.0%;">Boise Livraison dans les temps : 30</div>`)[0];
+            popup_bf34833435d645738dfc5483319e20d4.setContent(html_11840052f3c5459bb73bc862c37dacb2);
+        
+
+        marker_df137cfed69b4f1cb4c25bd16e4b67b4.bindPopup(popup_bf34833435d645738dfc5483319e20d4)
+        ;
+
+        
+    
+    
+            var marker_c0e32c7d2b5f4321b2db754685315742 = L.marker(
+                [62.783333, 15.666667],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_0ff21adec07449e9b5efd50b8cd913b8 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_c0e32c7d2b5f4321b2db754685315742.setIcon(beautify_icon_0ff21adec07449e9b5efd50b8cd913b8);
+        
+    
+        var popup_6faa2d675c934956a1f639aa775d2cdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b51bcfdc61e040abbb60a0fdcb5a9d8b = $(`<div id="html_b51bcfdc61e040abbb60a0fdcb5a9d8b" style="width: 100.0%; height: 100.0%;">Bräcke Livraison dans les temps : 18</div>`)[0];
+            popup_6faa2d675c934956a1f639aa775d2cdb.setContent(html_b51bcfdc61e040abbb60a0fdcb5a9d8b);
+        
+
+        marker_c0e32c7d2b5f4321b2db754685315742.bindPopup(popup_6faa2d675c934956a1f639aa775d2cdb)
+        ;
+
+        
+    
+    
+            var marker_0a5eaf60afb1452681d42863d14977d2 = L.marker(
+                [38.7077507, -9.1365919],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_3a2cefe73f9d46199dcb8770f35fb3bc = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_0a5eaf60afb1452681d42863d14977d2.setIcon(beautify_icon_3a2cefe73f9d46199dcb8770f35fb3bc);
+        
+    
+        var popup_4a07b818b7d44300b77de5044cb023fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_008d267464ec47acae8e13c72d7f933a = $(`<div id="html_008d267464ec47acae8e13c72d7f933a" style="width: 100.0%; height: 100.0%;">Lisboa Livraison dans les temps : 12</div>`)[0];
+            popup_4a07b818b7d44300b77de5044cb023fb.setContent(html_008d267464ec47acae8e13c72d7f933a);
+        
+
+        marker_0a5eaf60afb1452681d42863d14977d2.bindPopup(popup_4a07b818b7d44300b77de5044cb023fb)
+        ;
+
+        
+    
+    
+            var marker_cb1848afd24b47d487643fce153f5bcd = L.marker(
+                [39.9059878, -116.9843374],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_813fb99279924995947f02125b2fb2c7 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_cb1848afd24b47d487643fce153f5bcd.setIcon(beautify_icon_813fb99279924995947f02125b2fb2c7);
+        
+    
+        var popup_9badef57696840fd8e0f7a903680fc49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49f6fd9a68b84a65a748f40b0ac39cdc = $(`<div id="html_49f6fd9a68b84a65a748f40b0ac39cdc" style="width: 100.0%; height: 100.0%;">Lander Livraison dans les temps : 8</div>`)[0];
+            popup_9badef57696840fd8e0f7a903680fc49.setContent(html_49f6fd9a68b84a65a748f40b0ac39cdc);
+        
+
+        marker_cb1848afd24b47d487643fce153f5bcd.bindPopup(popup_9badef57696840fd8e0f7a903680fc49)
+        ;
+
+        
+    
+    
+            var marker_e298ebcbbc4045a78f08300951454d7d = L.marker(
+                [43.2961743, 5.3699525],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_3b7e314d14fa437b929652a505858b88 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_e298ebcbbc4045a78f08300951454d7d.setIcon(beautify_icon_3b7e314d14fa437b929652a505858b88);
+        
+    
+        var popup_e0204893e7a54565bbb871409d884fb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_441411b29861449ba1e20c444a818303 = $(`<div id="html_441411b29861449ba1e20c444a818303" style="width: 100.0%; height: 100.0%;">Marseille Livraison dans les temps : 14</div>`)[0];
+            popup_e0204893e7a54565bbb871409d884fb4.setContent(html_441411b29861449ba1e20c444a818303);
+        
+
+        marker_e298ebcbbc4045a78f08300951454d7d.bindPopup(popup_e0204893e7a54565bbb871409d884fb4)
+        ;
+
+        
+    
+    
+            var marker_f3455f8944914f6c91bc6ec2fb774e55 = L.marker(
+                [45.4972159, -73.6103642],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_87bd7e543712449ca681271f3e0cfe36 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_f3455f8944914f6c91bc6ec2fb774e55.setIcon(beautify_icon_87bd7e543712449ca681271f3e0cfe36);
+        
+    
+        var popup_8a08bd6832334fefa500138da74ce94e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6de4fa9d8f14bd5ab150f2cb2ed6de4 = $(`<div id="html_b6de4fa9d8f14bd5ab150f2cb2ed6de4" style="width: 100.0%; height: 100.0%;">Montreal Livraison dans les temps : 13</div>`)[0];
+            popup_8a08bd6832334fefa500138da74ce94e.setContent(html_b6de4fa9d8f14bd5ab150f2cb2ed6de4);
+        
+
+        marker_f3455f8944914f6c91bc6ec2fb774e55.bindPopup(popup_8a08bd6832334fefa500138da74ce94e)
+        ;
+
+        
+    
+    
+            var marker_ec9a347d0cd94ffca049770e1d0bdc68 = L.marker(
+                [55.6867243, 12.5700724],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_94faab87b6444b7cae7bb63cfd30ac12 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_ec9a347d0cd94ffca049770e1d0bdc68.setIcon(beautify_icon_94faab87b6444b7cae7bb63cfd30ac12);
+        
+    
+        var popup_e8add203bdb44b9e92e8a02b1d6bde1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4219eb6441804d3e80697ffadd5fcb91 = $(`<div id="html_4219eb6441804d3e80697ffadd5fcb91" style="width: 100.0%; height: 100.0%;">Kobenhavn Livraison dans les temps : 6</div>`)[0];
+            popup_e8add203bdb44b9e92e8a02b1d6bde1a.setContent(html_4219eb6441804d3e80697ffadd5fcb91);
+        
+
+        marker_ec9a347d0cd94ffca049770e1d0bdc68.bindPopup(popup_e8add203bdb44b9e92e8a02b1d6bde1a)
+        ;
+
+        
+    
+    
+            var marker_3fb4f7baf67045e2aea60a5a7e73a3cc = L.marker(
+                [43.6044622, 1.4442469],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_a6326922bebf4299a235de70243fa2f8 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_3fb4f7baf67045e2aea60a5a7e73a3cc.setIcon(beautify_icon_a6326922bebf4299a235de70243fa2f8);
+        
+    
+        var popup_a5a555e063664464958c9bd64a93f988 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_348f6e3447d7483680a92ff4b9fc7228 = $(`<div id="html_348f6e3447d7483680a92ff4b9fc7228" style="width: 100.0%; height: 100.0%;">Toulouse Livraison dans les temps : 13</div>`)[0];
+            popup_a5a555e063664464958c9bd64a93f988.setContent(html_348f6e3447d7483680a92ff4b9fc7228);
+        
+
+        marker_3fb4f7baf67045e2aea60a5a7e73a3cc.bindPopup(popup_a5a555e063664464958c9bd64a93f988)
+        ;
+
+        
+    
+    
+            var marker_e60667b7f7d14ccba17eeb70e7d2c739 = L.marker(
+                [47.7981346, 13.0464806],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_23d8bebd60d343529dce80b3338398f9 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_e60667b7f7d14ccba17eeb70e7d2c739.setIcon(beautify_icon_23d8bebd60d343529dce80b3338398f9);
+        
+    
+        var popup_898ce400350142dc8e3a19f2f59cb671 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3427e6be24b4a6196f8dcbfd899c567 = $(`<div id="html_d3427e6be24b4a6196f8dcbfd899c567" style="width: 100.0%; height: 100.0%;">Salzburg Livraison dans les temps : 9</div>`)[0];
+            popup_898ce400350142dc8e3a19f2f59cb671.setContent(html_d3427e6be24b4a6196f8dcbfd899c567);
+        
+
+        marker_e60667b7f7d14ccba17eeb70e7d2c739.bindPopup(popup_898ce400350142dc8e3a19f2f59cb671)
+        ;
+
+        
+    
+    
+            var marker_ed54f54c583a4bf8a545ca0602e91044 = L.marker(
+                [51.8896903, 0.8994651],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_0cf42b488b8e43909ad7cce11eee9d45 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_ed54f54c583a4bf8a545ca0602e91044.setIcon(beautify_icon_0cf42b488b8e43909ad7cce11eee9d45);
+        
+    
+        var popup_88b6c1e45c0a4464a9f84aae17b6a8cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc359855f1f84b7a9f63c79e65a8b35c = $(`<div id="html_dc359855f1f84b7a9f63c79e65a8b35c" style="width: 100.0%; height: 100.0%;">Colchester Livraison dans les temps : 13</div>`)[0];
+            popup_88b6c1e45c0a4464a9f84aae17b6a8cb.setContent(html_dc359855f1f84b7a9f63c79e65a8b35c);
+        
+
+        marker_ed54f54c583a4bf8a545ca0602e91044.bindPopup(popup_88b6c1e45c0a4464a9f84aae17b6a8cb)
+        ;
+
+        
+    
+    
+            var marker_ad0c96c3096a44b48992062301560e1f = L.marker(
+                [50.776351, 6.083862],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_593b37a36b2a4ffa9de6e444ece0577d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_ad0c96c3096a44b48992062301560e1f.setIcon(beautify_icon_593b37a36b2a4ffa9de6e444ece0577d);
+        
+    
+        var popup_067879e564bb42199497d0a99ec9d751 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1a13dfdc0ae4fe18d207152667e2722 = $(`<div id="html_d1a13dfdc0ae4fe18d207152667e2722" style="width: 100.0%; height: 100.0%;">Aachen Livraison dans les temps : 6</div>`)[0];
+            popup_067879e564bb42199497d0a99ec9d751.setContent(html_d1a13dfdc0ae4fe18d207152667e2722);
+        
+
+        marker_ad0c96c3096a44b48992062301560e1f.bindPopup(popup_067879e564bb42199497d0a99ec9d751)
+        ;
+
+        
+    
+    
+            var marker_5a9eb6bab9e7483eb03c3be403ce50ac = L.marker(
+                [41.3828939, 2.1774322],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_48e42c2f84ea4483bac3acc74de63710 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_5a9eb6bab9e7483eb03c3be403ce50ac.setIcon(beautify_icon_48e42c2f84ea4483bac3acc74de63710);
+        
+    
+        var popup_82c9a35e9fd44b39ac4d5cf29789379b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46b05f41d5da4252b7d0d6aef9d8d5cb = $(`<div id="html_46b05f41d5da4252b7d0d6aef9d8d5cb" style="width: 100.0%; height: 100.0%;">Barcelona Livraison dans les temps : 5</div>`)[0];
+            popup_82c9a35e9fd44b39ac4d5cf29789379b.setContent(html_46b05f41d5da4252b7d0d6aef9d8d5cb);
+        
+
+        marker_5a9eb6bab9e7483eb03c3be403ce50ac.bindPopup(popup_82c9a35e9fd44b39ac4d5cf29789379b)
+        ;
+
+        
+    
+    
+            var marker_da57b6b59b294f599bb672986a5ab050 = L.marker(
+                [56.1496278, 10.2134046],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_386815ec7de34edebe2c7c535074004c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_da57b6b59b294f599bb672986a5ab050.setIcon(beautify_icon_386815ec7de34edebe2c7c535074004c);
+        
+    
+        var popup_082a685414d6442da5c1ce36993c806e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_954fe35d8be44b549bd05ca4c81da859 = $(`<div id="html_954fe35d8be44b549bd05ca4c81da859" style="width: 100.0%; height: 100.0%;">Aarhus Livraison dans les temps : 11</div>`)[0];
+            popup_082a685414d6442da5c1ce36993c806e.setContent(html_954fe35d8be44b549bd05ca4c81da859);
+        
+
+        marker_da57b6b59b294f599bb672986a5ab050.bindPopup(popup_082a685414d6442da5c1ce36993c806e)
+        ;
+
+        
+    
+    
+            var marker_4795fedfe0584dcf851b010cde42d9a3 = L.marker(
+                [52.2319581, 21.0067249],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_307d57dca96e4f7f969969fc25df4cfb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_4795fedfe0584dcf851b010cde42d9a3.setIcon(beautify_icon_307d57dca96e4f7f969969fc25df4cfb);
+        
+    
+        var popup_96ec6cf6dead4c33a62dd4d3653e9f02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac5f049c66c44059a76290f011889be6 = $(`<div id="html_ac5f049c66c44059a76290f011889be6" style="width: 100.0%; height: 100.0%;">Warsaw Livraison dans les temps : 6</div>`)[0];
+            popup_96ec6cf6dead4c33a62dd4d3653e9f02.setContent(html_ac5f049c66c44059a76290f011889be6);
+        
+
+        marker_4795fedfe0584dcf851b010cde42d9a3.bindPopup(popup_96ec6cf6dead4c33a62dd4d3653e9f02)
+        ;
+
+        
+    
+    
+            var marker_bd2479fe0790428eab48c08c442d7a1d = L.marker(
+                [42.03726, -88.2810994],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_2a57aae5927e4573a0af4ec2a45642d9 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_bd2479fe0790428eab48c08c442d7a1d.setIcon(beautify_icon_2a57aae5927e4573a0af4ec2a45642d9);
+        
+    
+        var popup_72d272c889c445289dc264718edbb179 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b2e33c81deb483d890df87ff048857d = $(`<div id="html_4b2e33c81deb483d890df87ff048857d" style="width: 100.0%; height: 100.0%;">Elgin Livraison dans les temps : 4</div>`)[0];
+            popup_72d272c889c445289dc264718edbb179.setContent(html_4b2e33c81deb483d890df87ff048857d);
+        
+
+        marker_bd2479fe0790428eab48c08c442d7a1d.bindPopup(popup_72d272c889c445289dc264718edbb179)
+        ;
+
+        
+    
+    
+            var marker_0e29bc1788a94776af7ba946aec0edfc = L.marker(
+                [52.797273, 7.4345519],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_004f781efc1f48eeb79094b1104eca91 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_0e29bc1788a94776af7ba946aec0edfc.setIcon(beautify_icon_004f781efc1f48eeb79094b1104eca91);
+        
+    
+        var popup_b28e9e9972954953a0055576642a1144 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daf9253a752f401a820c27e9674f9265 = $(`<div id="html_daf9253a752f401a820c27e9674f9265" style="width: 100.0%; height: 100.0%;">Stavern Livraison dans les temps : 6</div>`)[0];
+            popup_b28e9e9972954953a0055576642a1144.setContent(html_daf9253a752f401a820c27e9674f9265);
+        
+
+        marker_0e29bc1788a94776af7ba946aec0edfc.bindPopup(popup_b28e9e9972954953a0055576642a1144)
+        ;
+
+        
+    
+    
+            var marker_f6c8358a4cdd48819fe5ee8a4986536e = L.marker(
+                [49.02428425, -123.07622361968933],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_3a27035cc5484c5ebe586fab3f82e791 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_f6c8358a4cdd48819fe5ee8a4986536e.setIcon(beautify_icon_3a27035cc5484c5ebe586fab3f82e791);
+        
+    
+        var popup_16ea785c9afd4709aa0edeffbb71dc83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fcf2a62dec14495ab28a997a1955be4 = $(`<div id="html_5fcf2a62dec14495ab28a997a1955be4" style="width: 100.0%; height: 100.0%;">Tsawwassen Livraison dans les temps : 13</div>`)[0];
+            popup_16ea785c9afd4709aa0edeffbb71dc83.setContent(html_5fcf2a62dec14495ab28a997a1955be4);
+        
+
+        marker_f6c8358a4cdd48819fe5ee8a4986536e.bindPopup(popup_16ea785c9afd4709aa0edeffbb71dc83)
+        ;
+
+        
+    
+    
+            var marker_a02a42fcfedd4d8295a06bc063dbab31 = L.marker(
+                [-34.7956908, -58.3144263],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_ba0ec85874b442eda1dceb3aaebc652d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_a02a42fcfedd4d8295a06bc063dbab31.setIcon(beautify_icon_ba0ec85874b442eda1dceb3aaebc652d);
+        
+    
+        var popup_11030f9e63d84b869dc4076a9769f69e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7fe818b86524eadb772821844a2f6bc = $(`<div id="html_c7fe818b86524eadb772821844a2f6bc" style="width: 100.0%; height: 100.0%;">I. de Margarita Livraison dans les temps : 11</div>`)[0];
+            popup_11030f9e63d84b869dc4076a9769f69e.setContent(html_c7fe818b86524eadb772821844a2f6bc);
+        
+
+        marker_a02a42fcfedd4d8295a06bc063dbab31.bindPopup(popup_11030f9e63d84b869dc4076a9769f69e)
+        ;
+
+        
+    
+    
+            var marker_3c7c0c18fd1741598acc3fe4186984cb = L.marker(
+                [50.6365654, 3.0635282],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_c9a4467193734578a3b56c717c4c8e98 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_3c7c0c18fd1741598acc3fe4186984cb.setIcon(beautify_icon_c9a4467193734578a3b56c717c4c8e98);
+        
+    
+        var popup_dc99933181d547208408b19beabad794 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbe8219d10a840bab2ae9a66620dc2c1 = $(`<div id="html_bbe8219d10a840bab2ae9a66620dc2c1" style="width: 100.0%; height: 100.0%;">Lille Livraison dans les temps : 5</div>`)[0];
+            popup_dc99933181d547208408b19beabad794.setContent(html_bbe8219d10a840bab2ae9a66620dc2c1);
+        
+
+        marker_3c7c0c18fd1741598acc3fe4186984cb.bindPopup(popup_dc99933181d547208408b19beabad794)
+        ;
+
+        
+    
+    
+            var marker_460d5de0bf9040c4bd39cad07ed7f7b2 = L.marker(
+                [-34.6075682, -58.4370894],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_cce1d66238a648aba85a72d5f358499f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_460d5de0bf9040c4bd39cad07ed7f7b2.setIcon(beautify_icon_cce1d66238a648aba85a72d5f358499f);
+        
+    
+        var popup_2bf14eaa5b15439195c98352179d12a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d240d3d2a36f4e0592fa92cd9a0a52f7 = $(`<div id="html_d240d3d2a36f4e0592fa92cd9a0a52f7" style="width: 100.0%; height: 100.0%;">Buenos Aires Livraison dans les temps : 13</div>`)[0];
+            popup_2bf14eaa5b15439195c98352179d12a5.setContent(html_d240d3d2a36f4e0592fa92cd9a0a52f7);
+        
+
+        marker_460d5de0bf9040c4bd39cad07ed7f7b2.bindPopup(popup_2bf14eaa5b15439195c98352179d12a5)
+        ;
+
+        
+    
+    
+            var marker_abbbb00381df4be68f0e11c1383e74e7 = L.marker(
+                [45.0677551, 7.6824892],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_3ba2e0c8717f47858b27cf4a42ec6468 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_abbbb00381df4be68f0e11c1383e74e7.setIcon(beautify_icon_3ba2e0c8717f47858b27cf4a42ec6468);
+        
+    
+        var popup_ba3aedcfb82144f3a115711f6022a956 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4c581d20ea94671a6814cc7de83d78a = $(`<div id="html_c4c581d20ea94671a6814cc7de83d78a" style="width: 100.0%; height: 100.0%;">Torino Livraison dans les temps : 5</div>`)[0];
+            popup_ba3aedcfb82144f3a115711f6022a956.setContent(html_c4c581d20ea94671a6814cc7de83d78a);
+        
+
+        marker_abbbb00381df4be68f0e11c1383e74e7.bindPopup(popup_ba3aedcfb82144f3a115711f6022a956)
+        ;
+
+        
+    
+    
+            var marker_f2be491c208c4274a849687279304ce3 = L.marker(
+                [46.0667277, -118.3393456],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_6e0f0171a20c4f1298c8b2923480a6df = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_f2be491c208c4274a849687279304ce3.setIcon(beautify_icon_6e0f0171a20c4f1298c8b2923480a6df);
+        
+    
+        var popup_4d9008a3184e4d73932624224660887f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ca4ccecd070436fa1cde31bb70b3a6c = $(`<div id="html_3ca4ccecd070436fa1cde31bb70b3a6c" style="width: 100.0%; height: 100.0%;">Walla Walla Livraison dans les temps : 1</div>`)[0];
+            popup_4d9008a3184e4d73932624224660887f.setContent(html_3ca4ccecd070436fa1cde31bb70b3a6c);
+        
+
+        marker_f2be491c208c4274a849687279304ce3.bindPopup(popup_4d9008a3184e4d73932624224660887f)
+        ;
+
+        
+    
+    
+            var marker_05af387a46f74f27acdd22db8890f2b3 = L.marker(
+                [49.2608724, -123.1139529],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_8159d1cefbe64748b85d7d10eaf0325e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_05af387a46f74f27acdd22db8890f2b3.setIcon(beautify_icon_8159d1cefbe64748b85d7d10eaf0325e);
+        
+    
+        var popup_d6cfc8043a0f48ef93b098af78298b4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fda4b043d04143bab581efc7b87e2708 = $(`<div id="html_fda4b043d04143bab581efc7b87e2708" style="width: 100.0%; height: 100.0%;">Vancouver Livraison dans les temps : 3</div>`)[0];
+            popup_d6cfc8043a0f48ef93b098af78298b4d.setContent(html_fda4b043d04143bab581efc7b87e2708);
+        
+
+        marker_05af387a46f74f27acdd22db8890f2b3.bindPopup(popup_d6cfc8043a0f48ef93b098af78298b4d)
+        ;
+
+        
+    
+    
+            var marker_eab4479ccc364b6198156db06fd17e90 = L.marker(
+                [49.4892913, 8.4673098],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_2021da91331d4e0bb1a61fdf653aa781 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_eab4479ccc364b6198156db06fd17e90.setIcon(beautify_icon_2021da91331d4e0bb1a61fdf653aa781);
+        
+    
+        var popup_9c6dd799439e4c1a916f647e2043d27d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76b3214bf1e4446392130c8683a7fc68 = $(`<div id="html_76b3214bf1e4446392130c8683a7fc68" style="width: 100.0%; height: 100.0%;">Mannheim Livraison dans les temps : 6</div>`)[0];
+            popup_9c6dd799439e4c1a916f647e2043d27d.setContent(html_76b3214bf1e4446392130c8683a7fc68);
+        
+
+        marker_eab4479ccc364b6198156db06fd17e90.bindPopup(popup_9c6dd799439e4c1a916f647e2043d27d)
+        ;
+
+        
+    
+    
+            var marker_6c10a85c41154a7b8bb0432340d7bde8 = L.marker(
+                [44.0505054, -123.0950506],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_6b807e5c7f924a80beb7c0f2e32d7c61 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_6c10a85c41154a7b8bb0432340d7bde8.setIcon(beautify_icon_6b807e5c7f924a80beb7c0f2e32d7c61);
+        
+    
+        var popup_cb4c2ce1b4014ba29b03e3f6e4c9e78c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21340271c2b845dda62a1f11dd527946 = $(`<div id="html_21340271c2b845dda62a1f11dd527946" style="width: 100.0%; height: 100.0%;">Eugene Livraison dans les temps : 8</div>`)[0];
+            popup_cb4c2ce1b4014ba29b03e3f6e4c9e78c.setContent(html_21340271c2b845dda62a1f11dd527946);
+        
+
+        marker_6c10a85c41154a7b8bb0432340d7bde8.bindPopup(popup_cb4c2ce1b4014ba29b03e3f6e4c9e78c)
+        ;
+
+        
+    
+    
+            var marker_413b157f4528445fac12c9048a85fcd9 = L.marker(
+                [50.8465573, 4.351697],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_067a912e05ef4164944d137b85f53211 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_413b157f4528445fac12c9048a85fcd9.setIcon(beautify_icon_067a912e05ef4164944d137b85f53211);
+        
+    
+        var popup_4020371e97a34cf987f8f00125623d14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cdab30da6a6469cb1151161a2b67112 = $(`<div id="html_7cdab30da6a6469cb1151161a2b67112" style="width: 100.0%; height: 100.0%;">Bruxelles Livraison dans les temps : 6</div>`)[0];
+            popup_4020371e97a34cf987f8f00125623d14.setContent(html_7cdab30da6a6469cb1151161a2b67112);
+        
+
+        marker_413b157f4528445fac12c9048a85fcd9.bindPopup(popup_4020371e97a34cf987f8f00125623d14)
+        ;
+
+        
+    
+    
+            var marker_f87a3b9d2600419bb61d12e38cb6ee03 = L.marker(
+                [47.6859573, -122.1920249],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_68fc1da2c23b41e4836c0eda00ff6405 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_f87a3b9d2600419bb61d12e38cb6ee03.setIcon(beautify_icon_68fc1da2c23b41e4836c0eda00ff6405);
+        
+    
+        var popup_f26adb2755884bbeaf48858928790a5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8e8351fde68493da09ba281f7f080ea = $(`<div id="html_e8e8351fde68493da09ba281f7f080ea" style="width: 100.0%; height: 100.0%;">Kirkland Livraison dans les temps : 3</div>`)[0];
+            popup_f26adb2755884bbeaf48858928790a5f.setContent(html_e8e8351fde68493da09ba281f7f080ea);
+        
+
+        marker_f87a3b9d2600419bb61d12e38cb6ee03.bindPopup(popup_f26adb2755884bbeaf48858928790a5f)
+        ;
+
+        
+    
+    
+            var marker_1b17c6251c6e4984bd45c83fd725f2fe = L.marker(
+                [37.7790262, -122.4199061],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_5f7cad5e13004c18a606f6b88fd8d791 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_1b17c6251c6e4984bd45c83fd725f2fe.setIcon(beautify_icon_5f7cad5e13004c18a606f6b88fd8d791);
+        
+    
+        var popup_1afe4c3941af4feab1e4d101868ca6f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29d3a2596c14439099baa52d2f67d389 = $(`<div id="html_29d3a2596c14439099baa52d2f67d389" style="width: 100.0%; height: 100.0%;">San Francisco Livraison dans les temps : 4</div>`)[0];
+            popup_1afe4c3941af4feab1e4d101868ca6f3.setContent(html_29d3a2596c14439099baa52d2f67d389);
+        
+
+        marker_1b17c6251c6e4984bd45c83fd725f2fe.bindPopup(popup_1afe4c3941af4feab1e4d101868ca6f3)
+        ;
+
+        
+    
+    
+            var marker_c12629fca03a41709e34c052bb3c4f53 = L.marker(
+                [60.1674881, 24.9427473],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_73b5110a8b744cc3b07e317a7dfa5c2e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_c12629fca03a41709e34c052bb3c4f53.setIcon(beautify_icon_73b5110a8b744cc3b07e317a7dfa5c2e);
+        
+    
+        var popup_09d13545fd1844f299315dca47abdf18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_143523920b684a04a100b4350e7a9d45 = $(`<div id="html_143523920b684a04a100b4350e7a9d45" style="width: 100.0%; height: 100.0%;">Helsinki Livraison dans les temps : 7</div>`)[0];
+            popup_09d13545fd1844f299315dca47abdf18.setContent(html_143523920b684a04a100b4350e7a9d45);
+        
+
+        marker_c12629fca03a41709e34c052bb3c4f53.bindPopup(popup_09d13545fd1844f299315dca47abdf18)
+        ;
+
+        
+    
+    
+            var marker_2b769ef4b65147379295f55d7c9724b9 = L.marker(
+                [39.6519275, -121.5858444],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_4cd8c81c96ea49edba3b8c037da0993a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_2b769ef4b65147379295f55d7c9724b9.setIcon(beautify_icon_4cd8c81c96ea49edba3b8c037da0993a);
+        
+    
+        var popup_63a53f3c9900489b85ca33693aa62e1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1820be8110a144eca3a77c8671daf477 = $(`<div id="html_1820be8110a144eca3a77c8671daf477" style="width: 100.0%; height: 100.0%;">Butte Livraison dans les temps : 3</div>`)[0];
+            popup_63a53f3c9900489b85ca33693aa62e1b.setContent(html_1820be8110a144eca3a77c8671daf477);
+        
+
+        marker_2b769ef4b65147379295f55d7c9724b9.bindPopup(popup_63a53f3c9900489b85ca33693aa62e1b)
+        ;
+
+        
+    
+    
+            var marker_d98cdd29b42a439fb314f7f59e1176db = L.marker(
+                [52.5170365, 13.3888599],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_20f2b68712bc40eca1f54fb98fb97de4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_d98cdd29b42a439fb314f7f59e1176db.setIcon(beautify_icon_20f2b68712bc40eca1f54fb98fb97de4);
+        
+    
+        var popup_3e28573e6924423181a5326db30e896b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bb0bc114a6144168e9f6d4eaffc588f = $(`<div id="html_2bb0bc114a6144168e9f6d4eaffc588f" style="width: 100.0%; height: 100.0%;">Berlin Livraison dans les temps : 6</div>`)[0];
+            popup_3e28573e6924423181a5326db30e896b.setContent(html_2bb0bc114a6144168e9f6d4eaffc588f);
+        
+
+        marker_d98cdd29b42a439fb314f7f59e1176db.bindPopup(popup_3e28573e6924423181a5326db30e896b)
+        ;
+
+        
+    
+    
+            var marker_1609f04699424528b774986bf1f5d663 = L.marker(
+                [-22.90556, -47.06083],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_21b5afb41e1f4ff481580fb003dd09d8 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_1609f04699424528b774986bf1f5d663.setIcon(beautify_icon_21b5afb41e1f4ff481580fb003dd09d8);
+        
+    
+        var popup_3d3086f4c65e49429dc7735e2c0b0700 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a74961a68ad48cabeb2a0ea66b9b3ac = $(`<div id="html_8a74961a68ad48cabeb2a0ea66b9b3ac" style="width: 100.0%; height: 100.0%;">Campinas Livraison dans les temps : 6</div>`)[0];
+            popup_3d3086f4c65e49429dc7735e2c0b0700.setContent(html_8a74961a68ad48cabeb2a0ea66b9b3ac);
+        
+
+        marker_1609f04699424528b774986bf1f5d663.bindPopup(popup_3d3086f4c65e49429dc7735e2c0b0700)
+        ;
+
+        
+    
+    
+            var marker_5af32a01d63347d9947c1fd7c11b4d16 = L.marker(
+                [48.8566969, 2.3514616],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_db0b9249d6b041e3b4367fa493972bc6 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_5af32a01d63347d9947c1fd7c11b4d16.setIcon(beautify_icon_db0b9249d6b041e3b4367fa493972bc6);
+        
+    
+        var popup_82fb6b31af8548b1b65f1d280bf0d511 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e9dd3b7d1a346ec9785abb0d5b3565a = $(`<div id="html_4e9dd3b7d1a346ec9785abb0d5b3565a" style="width: 100.0%; height: 100.0%;">Paris Livraison dans les temps : 4</div>`)[0];
+            popup_82fb6b31af8548b1b65f1d280bf0d511.setContent(html_4e9dd3b7d1a346ec9785abb0d5b3565a);
+        
+
+        marker_5af32a01d63347d9947c1fd7c11b4d16.bindPopup(popup_82fb6b31af8548b1b65f1d280bf0d511)
+        ;
+
+        
+    
+    
+            var marker_9529b6adfad6453c8f992e555e45c1a2 = L.marker(
+                [48.8035403, 2.1266886],
+                {}
+            ).addTo(feature_group_sub_group_a92b6692b88949f190d055970350876e);
+        
+    
+            var beautify_icon_379e35de59ec43b1a9ac16996a9e0167 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "#000", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#650a21"}
+            )
+            marker_9529b6adfad6453c8f992e555e45c1a2.setIcon(beautify_icon_379e35de59ec43b1a9ac16996a9e0167);
+        
+    
+        var popup_44308d981a6d4f2885601146452c63ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_408b9479abe74d91831a071144aea9bc = $(`<div id="html_408b9479abe74d91831a071144aea9bc" style="width: 100.0%; height: 100.0%;">Versailles Livraison dans les temps : 3</div>`)[0];
+            popup_44308d981a6d4f2885601146452c63ea.setContent(html_408b9479abe74d91831a071144aea9bc);
+        
+
+        marker_9529b6adfad6453c8f992e555e45c1a2.bindPopup(popup_44308d981a6d4f2885601146452c63ea)
+        ;
+
+        
+    
+    
+            var layer_control_4533d9e0c2974c1483f25943d5b61e9f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d4c935606ea2454c9d712afcb135b58e,
+                },
+                overlays :  {
+                    "D\u00e9lais de livraisons" : feature_group_sub_group_b34bd424d91c48fa8f9cf5d20f8badc5,
+                    "En retard" : feature_group_sub_group_0b074f49da34442794c898597b6c218b,
+                    "Dans les temps" : feature_group_sub_group_a92b6692b88949f190d055970350876e,
+                },
+            };
+            L.control.layers(
+                layer_control_4533d9e0c2974c1483f25943d5b61e9f.base_layers,
+                layer_control_4533d9e0c2974c1483f25943d5b61e9f.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d9b1dc8cd7fb4218958d756206b56f18);
+        
+</script>
